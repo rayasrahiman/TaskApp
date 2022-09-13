@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardScreen should render Dashboard screen correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#221c30",
+        "borderBottomWidth": 2.5,
+        "justifyContent": "center",
+        "width": 750,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../assets/Logo.png",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+          "width": 112.5,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#0570c9",
+          "fontSize": 66.5,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome to Dashboard Screen!
+    </Text>
+  </View>
+</View>
+`;

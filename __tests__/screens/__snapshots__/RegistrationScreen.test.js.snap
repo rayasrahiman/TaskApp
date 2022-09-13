@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationScreen should render Registration screen correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#221c30",
+        "borderBottomWidth": 2.5,
+        "justifyContent": "center",
+        "width": 750,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../assets/Logo.png",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+          "width": 112.5,
+        }
+      }
+    />
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "marginHorizontal": 22.5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#0570c9",
+            "fontSize": 53.5,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Welcome to the Pentair Home app!
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginHorizontal": 22.5,
+          "marginVertical": 26.5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#777",
+            "fontSize": 26.5,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Get the most out of your home's water. Enter your email to get started.
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "marginHorizontal": 22.5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 26.5,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Email Address
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#221c30",
+          "borderRadius": 13.5,
+          "borderWidth": 2.5,
+          "flexDirection": "row",
+          "height": 80,
+          "marginHorizontal": 22.5,
+          "marginVertical": 10,
+          "paddingHorizontal": 15,
+        }
+      }
+    >
+      <TextInput
+        autoCorrect={false}
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Email Address"
+        style={
+          Object {
+            "color": "#0570c9",
+            "flex": 1,
+            "fontSize": 26.5,
+          }
+        }
+        testID="emailID"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 37.5,
+        "marginTop": 400,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#44bdf5",
+          "borderRadius": 10,
+          "height": 93.5,
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": "100%",
+        }
+      }
+      testID="register"
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 40,
+            "paddingVertical": 6.5,
+          }
+        }
+      >
+        Get Started
+      </Text>
+    </View>
+  </View>
+</View>
+`;

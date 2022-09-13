@@ -1,0 +1,659 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RNCSafeAreaProvider
+    onInsetsChange={[Function]}
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNSScreenStack
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <RNSScreen
+        collapsable={false}
+        forwardedRef={[Function]}
+        gestureResponseDistance={
+          Object {
+            "bottom": -1,
+            "end": -1,
+            "start": -1,
+            "top": -1,
+          }
+        }
+        nativeBackButtonDismissalEnabled={false}
+        onAppear={[Function]}
+        onDisappear={[Function]}
+        onDismissed={[Function]}
+        onHeaderBackButtonClicked={[Function]}
+        onNativeDismissCancelled={[Function]}
+        onTransitionProgress={[Function]}
+        onWillDisappear={[Function]}
+        replaceAnimation="push"
+        stackPresentation="push"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+        swipeDirection="horizontal"
+      >
+        <RNSScreenStackHeaderConfig
+          backButtonInCustomView={false}
+          backgroundColor="rgb(255, 255, 255)"
+          color="rgb(0, 122, 255)"
+          direction="ltr"
+          disableBackButtonMenu={false}
+          hidden={true}
+          hideBackButton={false}
+          largeTitleHideShadow={false}
+          title="Pager"
+          titleColor="rgb(28, 28, 30)"
+          topInsetEnabled={false}
+          translucent={false}
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              Object {
+                "backgroundColor": "rgb(242, 242, 242)",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "white",
+                "flex": 1,
+              }
+            }
+          >
+            <View>
+              <RCTScrollView
+                data={
+                  Array [
+                    Object {
+                      "id": 1,
+                      "img": Object {
+                        "testUri": "../../../assets/img1.jpg",
+                      },
+                      "subtitle": "Stay smart connected and protected.",
+                      "title": "Take Control of your home's water.",
+                    },
+                    Object {
+                      "id": 2,
+                      "img": Object {
+                        "testUri": "../../../assets/img2.jpg",
+                      },
+                      "subtitle": "Get status information, home or away 24/7.",
+                      "title": "Manage systems on the go.",
+                    },
+                    Object {
+                      "id": 3,
+                      "img": Object {
+                        "testUri": "../../../assets/img3.jpg",
+                      },
+                      "subtitle": "Receive alerts sent to your phone and if you choose your trusted pros.",
+                      "title": "We'll let you know what to do, when.",
+                    },
+                    Object {
+                      "id": 4,
+                      "img": Object {
+                        "testUri": "../../../assets/img4.jpg",
+                      },
+                      "subtitle": "Peace of mins at your fingretips.",
+                      "title": "Worry a lot less, enjoy a lot more.",
+                    },
+                  ]
+                }
+                getItem={[Function]}
+                getItemCount={[Function]}
+                horizontal={true}
+                keyExtractor={[Function]}
+                onContentSizeChange={[Function]}
+                onLayout={[Function]}
+                onMomentumScrollBegin={[Function]}
+                onMomentumScrollEnd={[Function]}
+                onScroll={[Function]}
+                onScrollBeginDrag={[Function]}
+                onScrollEndDrag={[Function]}
+                pagingEnabled={true}
+                removeClippedSubviews={false}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                showsHorizontalScrollIndicator={false}
+                stickyHeaderIndices={Array []}
+                viewabilityConfigCallbackPairs={Array []}
+              >
+                <View>
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        null,
+                      ]
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "height": 667,
+                            "width": 750,
+                          }
+                        }
+                      >
+                        <Image
+                          resizeMode="cover"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/img1.jpg",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 667,
+                              "width": 750,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <Image
+                          resizeMode="contain"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/Logo.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 200,
+                              "width": 112.5,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#0570c9",
+                                "fontSize": 46.5,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                              }
+                            }
+                          >
+                            Take Control of your home's water.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                              "width": 750,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#888",
+                                "fontSize": 40,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                                "marginVertical": 66.5,
+                              }
+                            }
+                          >
+                            Stay smart connected and protected.
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        null,
+                      ]
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "height": 667,
+                            "width": 750,
+                          }
+                        }
+                      >
+                        <Image
+                          resizeMode="cover"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/img2.jpg",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 667,
+                              "width": 750,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <Image
+                          resizeMode="contain"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/Logo.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 200,
+                              "width": 112.5,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#0570c9",
+                                "fontSize": 46.5,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                              }
+                            }
+                          >
+                            Manage systems on the go.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                              "width": 750,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#888",
+                                "fontSize": 40,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                                "marginVertical": 66.5,
+                              }
+                            }
+                          >
+                            Get status information, home or away 24/7.
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        null,
+                      ]
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "height": 667,
+                            "width": 750,
+                          }
+                        }
+                      >
+                        <Image
+                          resizeMode="cover"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/img3.jpg",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 667,
+                              "width": 750,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <Image
+                          resizeMode="contain"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/Logo.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 200,
+                              "width": 112.5,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#0570c9",
+                                "fontSize": 46.5,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                              }
+                            }
+                          >
+                            We'll let you know what to do, when.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                              "width": 750,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#888",
+                                "fontSize": 40,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                                "marginVertical": 66.5,
+                              }
+                            }
+                          >
+                            Receive alerts sent to your phone and if you choose your trusted pros.
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        null,
+                      ]
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "height": 667,
+                            "width": 750,
+                          }
+                        }
+                      >
+                        <Image
+                          resizeMode="cover"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/img4.jpg",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 667,
+                              "width": 750,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <Image
+                          resizeMode="contain"
+                          source={
+                            Object {
+                              "testUri": "../../../assets/Logo.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 200,
+                              "width": 112.5,
+                            }
+                          }
+                        />
+                      </View>
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#0570c9",
+                                "fontSize": 46.5,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                              }
+                            }
+                          >
+                            Worry a lot less, enjoy a lot more.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "marginHorizontal": 0,
+                              "width": 750,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#888",
+                                "fontSize": 40,
+                                "fontWeight": "bold",
+                                "marginHorizontal": 13.5,
+                                "marginVertical": 66.5,
+                              }
+                            }
+                          >
+                            Peace of mins at your fingretips.
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </RCTScrollView>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-end",
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "position": "relative",
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "marginBottom": 26.5,
+                      "marginHorizontal": 7.5,
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#0570c9",
+                      "borderColor": "#0570c9",
+                      "borderRadius": 16.75,
+                      "borderWidth": 5,
+                      "height": 33.5,
+                      "margin": 3,
+                      "width": 33.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#888",
+                      "borderColor": "#888",
+                      "borderRadius": 16.75,
+                      "borderWidth": 5,
+                      "height": 33.5,
+                      "margin": 3,
+                      "width": 33.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#888",
+                      "borderColor": "#888",
+                      "borderRadius": 16.75,
+                      "borderWidth": 5,
+                      "height": 33.5,
+                      "margin": 3,
+                      "width": 33.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#888",
+                      "borderColor": "#888",
+                      "borderRadius": 16.75,
+                      "borderWidth": 5,
+                      "height": 33.5,
+                      "margin": 3,
+                      "width": 33.5,
+                    }
+                  }
+                />
+              </View>
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "marginBottom": 26.5,
+                    "marginHorizontal": 7.5,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 40,
+                    }
+                  }
+                >
+                  Skip
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RNSScreen>
+    </RNSScreenStack>
+  </RNCSafeAreaProvider>
+</RCTSafeAreaView>
+`;

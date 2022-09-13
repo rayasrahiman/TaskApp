@@ -1,0 +1,27 @@
+export default {
+  About: 'About',
+  Next: 'Next',
+  Email: 'Email Address',
+  EmailError: 'Enter a valid email!',
+  Password: 'Password',
+  PasswordError:
+    'Must contain at least one uppercase, lowercase, numeric character, special character and Length must be between 8 to 20 characters.',
+  RememberMe: 'Remember Me',
+  ForgotPassword: 'Forgot Password',
+  Login: 'Log in',
+  NoAccountTxt: 'Don’t have an account?',
+  SignUp: 'Sign Up',
+  Signin: 'Sign In',
+  SwitchAccount: 'Switch Account',
+  FullName: 'Full Name',
+  DummyEmail: 'abc@email.com',
+  PasswordTxt: 'Enter password',
+  ConfirmPassTxt: 'Confirm password',
+  AccountTxt: 'Already have an account?',
+  RessetPassword: 'Resset Password',
+  RessetPasswordTxt:
+    'Please enter your email address to request a password reset',
+  GetStarted: 'Get Started',
+  Skip: 'Skip',
+  Continue: 'Continue',
+};

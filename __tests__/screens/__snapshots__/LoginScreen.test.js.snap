@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginScreen should render Login screen correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#221c30",
+        "borderBottomWidth": 2.5,
+        "justifyContent": "center",
+        "width": 750,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../assets/Logo.png",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+          "width": 112.5,
+        }
+      }
+    />
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
+    }
+  >
+    <RCTScrollView>
+      <View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginHorizontal": 22.5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#0570c9",
+                  "fontSize": 53.5,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Looks like you already have a Pentair account!
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginHorizontal": 22.5,
+                "marginVertical": 26.5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#777",
+                  "fontSize": 26.5,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Sign in to go to your account.
+            </Text>
+          </View>
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginHorizontal": 22.5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 26.5,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Email Address
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#888",
+                "borderColor": "#221c30",
+                "borderRadius": 13.5,
+                "borderWidth": 2.5,
+                "flexDirection": "row",
+                "height": 80,
+                "marginHorizontal": 22.5,
+                "marginVertical": 10,
+                "paddingHorizontal": 15,
+              }
+            }
+          >
+            <TextInput
+              autoCorrect={false}
+              editable={false}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              placeholder="Email Address"
+              style={
+                Object {
+                  "color": "#221c30",
+                  "flex": 1,
+                  "fontSize": 26.5,
+                }
+              }
+              value="test@test.com"
+            />
+          </View>
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginHorizontal": 22.5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 26.5,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Password
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#221c30",
+                "borderRadius": 13.5,
+                "borderWidth": 2.5,
+                "flexDirection": "row",
+                "height": 80,
+                "marginHorizontal": 22.5,
+                "marginVertical": 10,
+                "paddingHorizontal": 15,
+              }
+            }
+          >
+            <TextInput
+              autoCorrect={false}
+              editable={true}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Enter password"
+              secureTextEntry={true}
+              style={
+                Object {
+                  "color": "#0570c9",
+                  "flex": 1,
+                  "fontSize": 26.5,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                onPress={[Function]}
+                selectable={false}
+                style={
+                  Array [
+                    Object {
+                      "color": undefined,
+                      "fontSize": 12,
+                    },
+                    Object {
+                      "fontSize": 40,
+                    },
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰛑
+              </Text>
+            </View>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "marginHorizontal": 22.5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#0570c9",
+                  "flex": 1,
+                  "fontSize": 26.5,
+                }
+              }
+            >
+              Forgot Password
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "flex": 1,
+              "justifyContent": "flex-end",
+              "marginHorizontal": 37.5,
+              "marginTop": 167,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#44bdf5",
+                "borderRadius": 10,
+                "height": 93.5,
+                "justifyContent": "center",
+                "opacity": 1,
+                "width": "100%",
+              }
+            }
+            testID="signIn"
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 40,
+                  "paddingVertical": 6.5,
+                }
+              }
+            >
+              Sign In
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "flex": 1,
+              "justifyContent": "flex-end",
+              "marginHorizontal": 37.5,
+              "marginVertical": 40,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#0570c9",
+                "borderRadius": 10,
+                "borderWidth": 2.5,
+                "height": 93.5,
+                "justifyContent": "center",
+                "opacity": 1,
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#0570c9",
+                  "fontSize": 40,
+                  "paddingVertical": 6.5,
+                }
+              }
+            >
+              Switch Account
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
