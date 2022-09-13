@@ -15,7 +15,8 @@ npm i --save
 ```
 ```bash
 After Package installation please go to "TaskApp\node_modules\react-native-i18n\android\build.gradle"
-change the following line "dependencies {
+change the following line
+"dependencies {
   compile "com.facebook.react:react-native:+" // From node_modules
 }"
 to
