@@ -5,6 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import RegistrationScreen from '../../screens/RegistrationScreen';
 import Header from '../../components/Header';
+import TitleAndSubTitle from '../../components/TitleAndSubTitle';
 
 jest.mock('@react-navigation/native', () => {
   return {
@@ -24,12 +25,25 @@ describe('RegistrationScreen', () => {
     wrapper.find(<Header />);
   });
 
+  test('should render TitleAndSubTitle component', () => {
+    const wrapper = shallow(<RegistrationScreen />);
+    wrapper.find(<TitleAndSubTitle />);
+  });
+
+  test('should render TitleAndSubTitle texts', () => {
+    const wrapper = render(<RegistrationScreen />);
+    wrapper.getByText('Welcome to the Pentair Home app!');
+    wrapper.getByText(
+      "Get the most out of your home's water. Enter your email to get started.",
+    );
+  });
+
   test('should render label', () => {
     const wrapper = render(<RegistrationScreen />);
     wrapper.getByText('Get Started');
   });
 
-  test('should show invalid message', () => {
+  test('should show invalid message when invalid email entered', () => {
     const {getByTestId, getByText} = render(<RegistrationScreen />);
     fireEvent.press(getByTestId('register'));
     getByText('Enter a valid email!');

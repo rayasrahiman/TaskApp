@@ -46,7 +46,7 @@ describe('LoginScreen', () => {
     wrapper.getByText('Forgot Password');
   });
 
-  test('should show invalid message', () => {
+  test('should show invalid message when invalid password entered', () => {
     const {getByTestId, getByText} = render(<LoginScreen {...mockedParams} />);
     fireEvent.press(getByTestId('signIn'));
     getByText(
