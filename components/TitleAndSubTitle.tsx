@@ -7,7 +7,17 @@ import {
 
 import {Colors} from '../constants/colors';
 
-export default function TitleAndSubTitle({
+export type Props = {
+  title: string;
+  subTitle: string;
+  titleContProp: any;
+  titleTxtProp: any;
+  subTitleContProp: any;
+  subTitleTxtProp: any;
+  viewPager: boolean;
+};
+
+const TitleAndSubTitle: React.FC<Props> = ({
   title,
   subTitle,
   titleContProp,
@@ -15,7 +25,7 @@ export default function TitleAndSubTitle({
   subTitleContProp,
   subTitleTxtProp,
   viewPager,
-}) {
+}) => {
   return (
     <View>
       <View
@@ -48,7 +58,7 @@ export default function TitleAndSubTitle({
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   titleTxt: {
@@ -62,3 +72,5 @@ const styles = StyleSheet.create({
     fontSize: Platform.OS === 'android' ? hp(3) : hp(2),
   },
 });
+
+export default TitleAndSubTitle;

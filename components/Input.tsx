@@ -17,7 +17,22 @@ import AntIcon from 'react-native-vector-icons/AntDesign';
 import {Colors} from '../constants/colors';
 import I18n from '../languages/i18n';
 
-export default function Input({
+export type Props = {
+  label: string;
+  placeholder: string;
+  titleContProp: any;
+  titleHeaderProp: any;
+  txtInputContProp: any;
+  txtInputProp: any;
+  onChangeText: (text: string) => void;
+  iconName: string;
+  error: boolean;
+  password: boolean;
+  inputValue: boolean;
+  onFocus(): void;
+};
+
+const Input: React.FC<Props> = ({
   label,
   placeholder,
   titleContProp,
@@ -31,7 +46,7 @@ export default function Input({
   inputValue,
   onFocus = () => {},
   ...inputProps
-}) {
+}) => {
   const [isFocused, setIsFocused] = useState(false);
   const [hidePass, setHidePass] = useState(password);
 
@@ -103,7 +118,7 @@ export default function Input({
       )}
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   titleCont: {
@@ -138,3 +153,5 @@ const styles = StyleSheet.create({
     fontSize: hp(3),
   },
 });
+
+export default Input;

@@ -1,10 +1,12 @@
 import React from 'react';
-import {fireEvent, render, waitFor} from '@testing-library/react-native';
+import {fireEvent, render, screen} from '@testing-library/react-native';
 import {shallow} from 'enzyme';
 import {useNavigation} from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 
 import RegistrationScreen from '../../screens/RegistrationScreen';
 import Header from '../../components/Header';
+import MainNavigator from '../../navigation/NavigationScreen';
 
 jest.mock('@react-navigation/native', () => {
   return {
@@ -12,6 +14,8 @@ jest.mock('@react-navigation/native', () => {
     useNavigation: jest.fn(),
   };
 });
+
+// jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 describe('RegistrationScreen', () => {
   test('should render Registration screen correctly', () => {
@@ -39,23 +43,6 @@ describe('RegistrationScreen', () => {
     const mockNavigate = jest.fn();
     useNavigation.mockReturnValueOnce({navigate: mockNavigate});
 
-    // const wrapper = render(<RegistrationScreen />);
-
-    // const field = {
-    //   email: wrapper.getByTestId('emailID'),
-    // };
-
-    // fireEvent.changeText(field.email, 'test@test.com');
-
-    // const button = wrapper.getByTestId('register');
-    // fireEvent.press(button);
-
-    // await waitFor(() => {
-    //   expect(mockNavigate).toHaveBeenCalledWith('Login', {
-    //     email: 'test@test.com',
-    //   });
-    // });
-
     const wrapper = shallow(<RegistrationScreen />);
     wrapper.find('Button').simulate('click');
 
@@ -65,4 +52,19 @@ describe('RegistrationScreen', () => {
       });
     });
   });
+  // test('should navigate to Login Screen with email after entering valid email address.', async () => {
+  //   const component = (
+  //     <NavigationContainer>
+  //       <MainNavigator />
+  //     </NavigationContainer>
+  //   );
+
+  //   render(component);
+  //   const toClick = await screen.findByText('test@test.com');
+
+  //   fireEvent(toClick, 'press');
+  //   const email = await screen.findByText('test@test.com');
+
+  //   expect(email).toBeTruthy();
+  // });
 });

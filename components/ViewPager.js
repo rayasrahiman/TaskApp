@@ -59,14 +59,6 @@ export default function ViewPager({
           subTitleContProp={styles.subtitleCont}
           subTitleTxtProp={styles.subtitleTxt}
         />
-        {/* <View>
-          <Text style={styles.titleTxt}>{item.title}</Text>
-        </View>
-        <View style={styles.subtitleCont}>
-          <Text numberOfLines={3} style={styles.subtitleTxt}>
-            {item.subtitle}
-          </Text>
-        </View> */}
       </View>
     );
   };
