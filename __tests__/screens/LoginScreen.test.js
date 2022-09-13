@@ -17,7 +17,6 @@ jest.mock('@react-navigation/native', () => {
 describe('LoginScreen', () => {
   const mockedParams = {
     route: {params: {email: 'test@test.com'}},
-    navigation: '',
   };
   test('should render Login screen correctly', () => {
     const wrapper = render(<LoginScreen {...mockedParams} />).toJSON();
@@ -44,6 +43,7 @@ describe('LoginScreen', () => {
     const wrapper = render(<LoginScreen {...mockedParams} />);
     wrapper.getByText('Sign In');
     wrapper.getByText('Switch Account');
+    wrapper.getByText('Forgot Password');
   });
 
   test('should show invalid message', () => {
