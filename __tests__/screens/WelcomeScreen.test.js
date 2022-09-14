@@ -5,6 +5,7 @@ import {shallow} from 'enzyme';
 import WelcomeScreen from '../../screens/WelcomeScreen';
 import ViewPager from '../../components/ViewPager';
 import TitleAndSubTitle from '../../components/TitleAndSubTitle';
+import Button from '../../components/Button';
 
 describe('WelcomeScreen', () => {
   test('should render Welcome screen correctly', () => {
@@ -12,7 +13,7 @@ describe('WelcomeScreen', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('should render ViewPager', () => {
+  test('should render ViewPager component', () => {
     const wrapper = shallow(<WelcomeScreen />);
     wrapper.find(<ViewPager />);
   });
@@ -22,7 +23,12 @@ describe('WelcomeScreen', () => {
     wrapper.find(<TitleAndSubTitle />);
   });
 
-  test('should render TitleAndSubTitle texts', () => {
+  test('should render Button component', () => {
+    const wrapper = shallow(<WelcomeScreen />);
+    wrapper.find(<Button />);
+  });
+
+  test('should render TitleAndSubTitle and other texts', () => {
     const wrapper = render(<WelcomeScreen />);
     wrapper.getByText("Take Control of your home's water.");
     wrapper.getByText('Stay smart connected and protected.');
@@ -34,5 +40,6 @@ describe('WelcomeScreen', () => {
     );
     wrapper.getByText('Worry a lot less, enjoy a lot more.');
     wrapper.getByText('Peace of mins at your fingretips.');
+    wrapper.getByText('Skip');
   });
 });

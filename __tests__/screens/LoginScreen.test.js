@@ -54,7 +54,7 @@ describe('LoginScreen', () => {
     );
   });
 
-  test('should navigate to Dashboard Screen with email', async () => {
+  test('should navigate to Dashboard Screen.', async () => {
     const mockNavigate = jest.fn();
     useNavigation.mockReturnValueOnce({navigate: mockNavigate});
 
