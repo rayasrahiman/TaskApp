@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import {
   View,
   Text,
@@ -37,6 +37,22 @@ export default function ViewPager({
     );
     setImageActive(currentIndex);
   };
+
+  const goToNextSlide = () => {
+    const nextSlideIndex = imageActive + 1;
+    if (nextSlideIndex != data.length) {
+      const offset = nextSlideIndex * Dimensions.get('window').width;
+      ref?.current.scrollToOffset({offset});
+      setImageActive(imageActive + 1);
+    }
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [imageActive]);
 
   const renderItem = ({item}) => {
     return (
