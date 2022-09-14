@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 import LoginScreen from '../../screens/LoginScreen';
 import Header from '../../components/Header';
 import TitleAndSubTitle from '../../components/TitleAndSubTitle';
+import Loader from '../../components/Loader';
 
 jest.mock('@react-navigation/native', () => {
   return {
@@ -31,6 +32,11 @@ describe('LoginScreen', () => {
   test('should render TitleAndSubTitle component', () => {
     const wrapper = shallow(<LoginScreen {...mockedParams} />);
     wrapper.find(<TitleAndSubTitle />);
+  });
+
+  test('should render Loader component', () => {
+    const wrapper = shallow(<LoginScreen {...mockedParams} />);
+    wrapper.find(<Loader />);
   });
 
   test('should render TitleAndSubTitle texts', () => {

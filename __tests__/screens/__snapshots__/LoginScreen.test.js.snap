@@ -295,7 +295,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "white",
+                  "color": "#ffffff",
                   "fontSize": 40,
                   "paddingVertical": 6.5,
                 }
@@ -330,7 +330,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "white",
+                "backgroundColor": "#ffffff",
                 "borderColor": "#0570c9",
                 "borderRadius": 10,
                 "borderWidth": 2.5,

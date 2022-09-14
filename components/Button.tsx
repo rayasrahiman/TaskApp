@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   btnTxt: {
     fontSize: hp(3),
     paddingVertical: hp(0.5),
-    color: 'white',
+    color: Colors.backGround,
   },
 });
 

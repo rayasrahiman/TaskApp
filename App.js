@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {SafeAreaView, StyleSheet, BackHandler} from 'react-native';
 
 import MainNavigator from './navigation/NavigationScreen';
+import {Colors} from './constants/colors';
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.backGround,
   },
 });
 

@@ -5,6 +5,7 @@ exports[`App should render correctly 1`] = `
   emulateUnlessSupported={true}
   style={
     Object {
+      "backgroundColor": "#ffffff",
       "flex": 1,
     }
   }
@@ -89,7 +90,7 @@ exports[`App should render correctly 1`] = `
           <View
             style={
               Object {
-                "backgroundColor": "white",
+                "backgroundColor": "#ffffff",
                 "flex": 1,
               }
             }

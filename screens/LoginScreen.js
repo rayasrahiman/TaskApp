@@ -23,6 +23,7 @@ import I18n from '../languages/i18n';
 export default function LoginScreen({navigation, route}) {
   const [disable, setDisable] = useState(true);
   const [error, setError] = useState(false);
+  const [loader, setLoader] = useState(false);
   const {email} = route.params;
 
   const regex =
@@ -34,6 +35,7 @@ export default function LoginScreen({navigation, route}) {
 
   const redirect = () => {
     if (!disable) {
+      setLoader(true);
       navigation.navigate('Dashboard');
     } else {
       setError(true);
@@ -67,6 +69,7 @@ export default function LoginScreen({navigation, route}) {
             onChangeText={validate}
             error={error && <Text>{I18n.t('PasswordError')}</Text>}
             onFocus={() => setError(false)}
+            passwordLoader={loader}
           />
 
           <Button
@@ -114,7 +117,7 @@ const styles = StyleSheet.create({
     marginHorizontal: wp(5),
   },
   btnSecondCont: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.backGround,
     borderColor: Colors.primary700,
     borderWidth: wp(0.3),
   },

@@ -4,7 +4,7 @@ exports[`WelcomeScreen should render Welcome screen correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "#ffffff",
       "flex": 1,
     }
   }

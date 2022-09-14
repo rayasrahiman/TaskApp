@@ -16,6 +16,7 @@ import AntIcon from 'react-native-vector-icons/AntDesign';
 
 import {Colors} from '../constants/colors';
 import I18n from '../languages/i18n';
+import Loader from './Loader';
 
 export type Props = {
   label: string;
@@ -28,6 +29,7 @@ export type Props = {
   iconName: string;
   error: boolean;
   password: boolean;
+  passwordLoader: boolean;
   inputValue: boolean;
   onFocus(): void;
 };
@@ -43,6 +45,7 @@ const Input: React.FC<Props> = ({
   iconName,
   error,
   password,
+  passwordLoader,
   inputValue,
   onFocus = () => {},
   ...inputProps
@@ -116,6 +119,7 @@ const Input: React.FC<Props> = ({
           <Text style={styles.txtInput}>{I18n.t('ForgotPassword')}</Text>
         </TouchableOpacity>
       )}
+      {passwordLoader && <Loader />}
     </View>
   );
 };

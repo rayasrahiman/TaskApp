@@ -68,7 +68,6 @@ export default function RegistrationScreen({navigation}) {
 const styles = StyleSheet.create({
   mainWrapper: {
     flex: 1,
-    backgroundColor: 'white',
   },
   subTitleCont: {
     marginVertical: hp(2),

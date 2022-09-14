@@ -4,7 +4,6 @@ exports[`RegistrationScreen should render Registration screen correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "white",
       "flex": 1,
     }
   }
@@ -164,7 +163,7 @@ exports[`RegistrationScreen should render Registration screen correctly 1`] = `
       <Text
         style={
           Object {
-            "color": "white",
+            "color": "#ffffff",
             "fontSize": 40,
             "paddingVertical": 6.5,
           }

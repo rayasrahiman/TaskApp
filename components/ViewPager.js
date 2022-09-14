@@ -108,7 +108,7 @@ export default function ViewPager({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: Colors.backGround,
   },
   wrap: {
     width: Dimensions.get('window').width,
