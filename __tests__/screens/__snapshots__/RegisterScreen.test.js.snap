@@ -1,0 +1,704 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterScreen should render Register screen correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#CCCCCC",
+        "borderBottomWidth": 2.5,
+        "justifyContent": "center",
+        "width": 750,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../assets/Logo.png",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+          "width": 112.5,
+        }
+      }
+    />
+  </View>
+  <RCTScrollView>
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <RCTScrollView>
+          <View>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#244379",
+                      "fontSize": 53.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Let's set up your Pentair Home app account.
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                    "marginTop": 26.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#838383",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Create your password for
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 26.5,
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  test@test.com
+                </Text>
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Create Password
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#838383",
+                    "borderRadius": 13.5,
+                    "borderWidth": 2.5,
+                    "flexDirection": "row",
+                    "height": 80,
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 10,
+                    "paddingHorizontal": 15,
+                  }
+                }
+              >
+                <TextInput
+                  autoCorrect={false}
+                  editable={true}
+                  onBlur={[Function]}
+                  onChangeText={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Enter password"
+                  secureTextEntry={true}
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "flex": 1,
+                      "fontSize": 26.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    onPress={[Function]}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "fontSize": 40,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰛑
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 40,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    Atleast 8 characters.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    1 uppercase and 1 lowercase letter.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    1 number.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    1 special character.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Confirm New Password
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#838383",
+                    "borderRadius": 13.5,
+                    "borderWidth": 2.5,
+                    "flexDirection": "row",
+                    "height": 80,
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 10,
+                    "paddingHorizontal": 15,
+                  }
+                }
+              >
+                <TextInput
+                  autoCorrect={false}
+                  editable={true}
+                  onBlur={[Function]}
+                  onChangeText={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Enter password"
+                  secureTextEntry={true}
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "flex": 1,
+                      "fontSize": 26.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    onPress={[Function]}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "fontSize": 40,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰛑
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "marginHorizontal": 37.5,
+                  "marginTop": 40,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "marginVertical": 13.5,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  onPress={[Function]}
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 66.5,
+                        "marginRight": 15,
+                      },
+                      Object {
+                        "fontFamily": "Ionicons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <View>
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                        "marginRight": 7.5,
+                      }
+                    }
+                  >
+                    I have read and agree to the
+                  </Text>
+                  <View
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Text
+                      numberOfLines={2}
+                      style={
+                        Object {
+                          "color": "#0E6E96",
+                          "fontSize": 40,
+                        }
+                      }
+                    >
+                      Terms of Service.
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginVertical": 13.5,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  onPress={[Function]}
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 66.5,
+                        "marginRight": 15,
+                      },
+                      Object {
+                        "fontFamily": "Ionicons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#838383",
+                      "flexWrap": "wrap",
+                      "fontSize": 40,
+                      "marginRight": 37.5,
+                    }
+                  }
+                >
+                  I would like to receive brandApp communication regarding helpful tips and tricks, product updates, surveys and special offers. You may withdraw your consent at any time in the app.
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "marginTop": 66.5,
+                  }
+                }
+              >
+                <Text
+                  numberOfLines={2}
+                  style={
+                    Object {
+                      "color": "#838383",
+                      "fontSize": 40,
+                      "marginRight": 7.5,
+                    }
+                  }
+                >
+                  Your personal information will be handled in accordance with our
+                </Text>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <Text
+                    numberOfLines={2}
+                    style={
+                      Object {
+                        "color": "#0E6E96",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    Privacy notice.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-end",
+                  "flex": 1,
+                  "justifyContent": "flex-end",
+                  "marginHorizontal": 37.5,
+                  "marginVertical": 66.5,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#0E6E96",
+                    "borderRadius": 10,
+                    "height": 93.5,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "width": "100%",
+                  }
+                }
+                testID="create"
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 40,
+                      "paddingVertical": 6.5,
+                    }
+                  }
+                >
+                  Create My Account
+                </Text>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

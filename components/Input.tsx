@@ -27,11 +27,16 @@ export type Props = {
   txtInputProp: any;
   onChangeText: (text: string) => void;
   iconName: string;
+  txt: string;
   error: boolean;
   password: boolean;
+  forgotPassword: boolean;
   passwordLoader: boolean;
+  createPass: boolean;
   inputValue: boolean;
+  confirmNew: boolean;
   onFocus(): void;
+  forgotPass(): void;
 };
 
 const Input: React.FC<Props> = ({
@@ -45,9 +50,14 @@ const Input: React.FC<Props> = ({
   iconName,
   error,
   password,
+  forgotPassword,
   passwordLoader,
   inputValue,
-  onFocus = () => {},
+  txt,
+  onFocus,
+  forgotPass,
+  createPass,
+  confirmNew,
   ...inputProps
 }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -63,11 +73,11 @@ const Input: React.FC<Props> = ({
           ...styles.txtInputCont,
           ...{
             borderColor: error
-              ? Colors.error
+              ? Colors.red
               : isFocused
-              ? Colors.primary700
-              : Colors.gray700,
-            backgroundColor: inputValue ? '#888' : Colors.backGround,
+              ? Colors.black
+              : Colors.grayishBlack,
+            backgroundColor: inputValue ? Colors.lightGray : Colors.white,
           },
           ...txtInputContProp,
         }}>
@@ -75,7 +85,7 @@ const Input: React.FC<Props> = ({
           {...inputProps}
           style={{
             ...styles.txtInput,
-            ...{color: inputValue ? Colors.gray700 : Colors.primary700},
+            ...{color: inputValue ? Colors.grayishBlack : Colors.black},
             ...txtInputProp,
           }}
           autoCorrect={false}
@@ -101,6 +111,15 @@ const Input: React.FC<Props> = ({
                 ]}
               />
             )}
+            {confirmNew && (
+              <AntIcon
+                name="checkcircle"
+                style={[
+                  styles.iconSize,
+                  {marginRight: wp(2), color: Colors.green},
+                ]}
+              />
+            )}
             <Icon
               onPress={() => setHidePass(!hidePass)}
               name={hidePass ? 'eye-off-outline' : 'eye-outline'}
@@ -114,8 +133,74 @@ const Input: React.FC<Props> = ({
           <Text style={styles.errTxt}>{error}</Text>
         </View>
       )}
-      {password && (
-        <TouchableOpacity style={styles.titleCont}>
+      {createPass && (
+        <View style={{...styles.titleCont, ...{marginVertical: hp(3)}}}>
+          <View style={styles.createPassCont}>
+            <Icon
+              name="check"
+              style={{
+                ...styles.iconSize,
+                ...{
+                  color: txt.match(/(?=^.{8,}$)/) ? Colors.green : Colors.gray,
+                  marginRight: wp(1),
+                },
+              }}
+            />
+            <Text style={styles.createPassTxt}>
+              {I18n.t('eightCharacters')}
+            </Text>
+          </View>
+          <View style={styles.createPassCont}>
+            <Icon
+              name="check"
+              style={{
+                ...styles.iconSize,
+                ...{
+                  color: txt.match(/(?=.*[a-z])(?=.*[A-Z])/)
+                    ? Colors.green
+                    : Colors.gray,
+                  marginRight: wp(1),
+                },
+              }}
+            />
+            <Text style={styles.createPassTxt}>
+              {I18n.t('upperandlowercase')}
+            </Text>
+          </View>
+          <View style={styles.createPassCont}>
+            <Icon
+              name="check"
+              style={{
+                ...styles.iconSize,
+                ...{
+                  color: txt.match(/(?=.*[0-9])/) ? Colors.green : Colors.gray,
+                  marginRight: wp(1),
+                },
+              }}
+            />
+            <Text style={styles.createPassTxt}>{I18n.t('oneNumber')}</Text>
+          </View>
+          <View style={styles.createPassCont}>
+            <Icon
+              name="check"
+              style={{
+                ...styles.iconSize,
+                ...{
+                  color: txt.match(
+                    /(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])/,
+                  )
+                    ? Colors.green
+                    : Colors.gray,
+                  marginRight: wp(1),
+                },
+              }}
+            />
+            <Text style={styles.createPassTxt}>{I18n.t('specialChar')}</Text>
+          </View>
+        </View>
+      )}
+      {forgotPassword && (
+        <TouchableOpacity style={styles.titleCont} onPress={forgotPass}>
           <Text style={styles.txtInput}>{I18n.t('ForgotPassword')}</Text>
         </TouchableOpacity>
       )}
@@ -131,6 +216,7 @@ const styles = StyleSheet.create({
   titleHeader: {
     fontWeight: 'bold',
     fontSize: Platform.OS === 'android' ? hp(3) : hp(2),
+    color: Colors.black,
   },
   txtInputCont: {
     marginVertical: 10,
@@ -141,11 +227,11 @@ const styles = StyleSheet.create({
     borderWidth: wp(0.3),
     borderRadius: hp(1),
     // width: '100%',
-    borderColor: Colors.gray700,
+    borderColor: Colors.grayishBlack,
     alignItems: 'center',
   },
   txtInput: {
-    color: Colors.primary700,
+    color: Colors.darkBlue,
     flex: 1,
     fontSize: Platform.OS === 'android' ? hp(3) : hp(2),
   },
@@ -155,6 +241,14 @@ const styles = StyleSheet.create({
   errTxt: {
     color: Colors.error,
     fontSize: hp(3),
+  },
+  createPassCont: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  createPassTxt: {
+    fontSize: hp(3),
+    color: Colors.grayishBlack,
   },
 });
 

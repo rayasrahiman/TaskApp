@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.primary700,
+    backgroundColor: Colors.lightBlue,
   },
   btnTxt: {
     fontSize: hp(3),

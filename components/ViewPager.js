@@ -124,7 +124,7 @@ export default function ViewPager({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backGround,
+    backgroundColor: Colors.white,
   },
   wrap: {
     width: Dimensions.get('window').width,
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   },
   titleTxt: {
     marginHorizontal: hp(1),
-    color: Colors.primary700,
+    color: Colors.darkBlue,
     fontSize: hp(3.5),
     fontWeight: 'bold',
   },
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
   subtitleTxt: {
     marginVertical: hp(5),
     marginHorizontal: hp(1),
-    color: '#888',
+    color: Colors.grayishBlack,
     fontSize: hp(3),
   },
   bottomWrapper: {
@@ -162,23 +162,24 @@ const styles = StyleSheet.create({
   },
   dotActive: {
     margin: 3,
-    backgroundColor: Colors.primary700,
+    backgroundColor: Colors.darkBlue,
     borderRadius: hp(2.5) / 2,
     borderWidth: 5,
-    borderColor: Colors.primary700,
+    borderColor: Colors.darkBlue,
     height: hp(2.5),
     width: hp(2.5),
   },
   dot: {
     margin: 3,
-    backgroundColor: '#888',
+    backgroundColor: Colors.grayishBlack,
     borderRadius: hp(2.5) / 2,
     borderWidth: 5,
-    borderColor: '#888',
+    borderColor: Colors.grayishBlack,
     height: hp(2.5),
     width: hp(2.5),
   },
   btnTxt: {
     fontSize: hp(3),
+    color: Colors.grayishBlack,
   },
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginScreen should render Login screen correctly 1`] = `
+exports[`SignInScreen should render SignIn screen correctly 1`] = `
 <View
   style={
     Object {
@@ -12,7 +12,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#221c30",
+        "borderBottomColor": "#CCCCCC",
         "borderBottomWidth": 2.5,
         "justifyContent": "center",
         "width": 750,
@@ -60,7 +60,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "#0570c9",
+                  "color": "#244379",
                   "fontSize": 53.5,
                   "fontWeight": "bold",
                 }
@@ -80,7 +80,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "#777",
+                  "color": "#838383",
                   "fontSize": 26.5,
                   "fontWeight": "bold",
                 }
@@ -101,6 +101,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
+                  "color": "#838383",
                   "fontSize": 26.5,
                   "fontWeight": "bold",
                 }
@@ -113,8 +114,8 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#888",
-                "borderColor": "#221c30",
+                "backgroundColor": "#EBEBEB",
+                "borderColor": "#838383",
                 "borderRadius": 13.5,
                 "borderWidth": 2.5,
                 "flexDirection": "row",
@@ -133,7 +134,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
               placeholder="Email Address"
               style={
                 Object {
-                  "color": "#221c30",
+                  "color": "#838383",
                   "flex": 1,
                   "fontSize": 26.5,
                 }
@@ -153,6 +154,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
+                  "color": "#000000",
                   "fontSize": 26.5,
                   "fontWeight": "bold",
                 }
@@ -165,8 +167,8 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#ffffff",
-                "borderColor": "#221c30",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#838383",
                 "borderRadius": 13.5,
                 "borderWidth": 2.5,
                 "flexDirection": "row",
@@ -187,7 +189,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
               secureTextEntry={true}
               style={
                 Object {
-                  "color": "#0570c9",
+                  "color": "#000000",
                   "flex": 1,
                   "fontSize": 26.5,
                 }
@@ -229,7 +231,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
           <View
             accessible={true}
             collapsable={false}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -247,13 +249,13 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "#0570c9",
+                  "color": "#244379",
                   "flex": 1,
                   "fontSize": 26.5,
                 }
               }
             >
-              Forgot Password
+              Forgot Password?
             </Text>
           </View>
         </View>
@@ -282,7 +284,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#44bdf5",
+                "backgroundColor": "#0E6E96",
                 "borderRadius": 10,
                 "height": 93.5,
                 "justifyContent": "center",
@@ -330,8 +332,8 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#ffffff",
-                "borderColor": "#0570c9",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#0E6E96",
                 "borderRadius": 10,
                 "borderWidth": 2.5,
                 "height": 93.5,
@@ -344,7 +346,7 @@ exports[`LoginScreen should render Login screen correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "#0570c9",
+                  "color": "#0E6E96",
                   "fontSize": 40,
                   "paddingVertical": 6.5,
                 }

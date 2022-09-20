@@ -10,6 +10,7 @@ Enzyme.configure({adapter: new Adapter()});
 import mockAsyncStorage from '@react-native-async-storage/async-storage/jest/async-storage-mock';
 
 jest.mock('@react-native-async-storage/async-storage', () => mockAsyncStorage);
+jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');
 
 // jest.mock('react-native-reanimated', () => {
 //   const Reanimated = require('react-native-reanimated/mock');

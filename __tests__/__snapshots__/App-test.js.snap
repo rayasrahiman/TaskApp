@@ -5,7 +5,7 @@ exports[`App should render correctly 1`] = `
   emulateUnlessSupported={true}
   style={
     Object {
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
   }
@@ -90,7 +90,7 @@ exports[`App should render correctly 1`] = `
           <View
             style={
               Object {
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "#FFFFFF",
                 "flex": 1,
               }
             }
@@ -215,7 +215,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#0570c9",
+                                "color": "#244379",
                                 "fontSize": 46.5,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -236,7 +236,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#888",
+                                "color": "#838383",
                                 "fontSize": 40,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -312,7 +312,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#0570c9",
+                                "color": "#244379",
                                 "fontSize": 46.5,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -333,7 +333,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#888",
+                                "color": "#838383",
                                 "fontSize": 40,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -409,7 +409,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#0570c9",
+                                "color": "#244379",
                                 "fontSize": 46.5,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -430,7 +430,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#888",
+                                "color": "#838383",
                                 "fontSize": 40,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -506,7 +506,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#0570c9",
+                                "color": "#244379",
                                 "fontSize": 46.5,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -527,7 +527,7 @@ exports[`App should render correctly 1`] = `
                           <Text
                             style={
                               Object {
-                                "color": "#888",
+                                "color": "#838383",
                                 "fontSize": 40,
                                 "fontWeight": "bold",
                                 "marginHorizontal": 13.5,
@@ -571,8 +571,8 @@ exports[`App should render correctly 1`] = `
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#0570c9",
-                      "borderColor": "#0570c9",
+                      "backgroundColor": "#244379",
+                      "borderColor": "#244379",
                       "borderRadius": 16.75,
                       "borderWidth": 5,
                       "height": 33.5,
@@ -584,8 +584,8 @@ exports[`App should render correctly 1`] = `
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#888",
-                      "borderColor": "#888",
+                      "backgroundColor": "#838383",
+                      "borderColor": "#838383",
                       "borderRadius": 16.75,
                       "borderWidth": 5,
                       "height": 33.5,
@@ -597,8 +597,8 @@ exports[`App should render correctly 1`] = `
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#888",
-                      "borderColor": "#888",
+                      "backgroundColor": "#838383",
+                      "borderColor": "#838383",
                       "borderRadius": 16.75,
                       "borderWidth": 5,
                       "height": 33.5,
@@ -610,8 +610,8 @@ exports[`App should render correctly 1`] = `
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#888",
-                      "borderColor": "#888",
+                      "backgroundColor": "#838383",
+                      "borderColor": "#838383",
                       "borderRadius": 16.75,
                       "borderWidth": 5,
                       "height": 33.5,
@@ -643,6 +643,7 @@ exports[`App should render correctly 1`] = `
                 <Text
                   style={
                     Object {
+                      "color": "#838383",
                       "fontSize": 40,
                     }
                   }

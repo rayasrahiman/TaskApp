@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Button from '../components/Button';
 import Header from '../components/Header';
 import Input from '../components/Input';
 import TitleAndSubTitle from '../components/TitleAndSubTitle';
-import {Colors} from '../constants/colors';
 import I18n from '../languages/i18n';
 
 export default function RegistrationScreen({navigation}) {
@@ -22,9 +22,18 @@ export default function RegistrationScreen({navigation}) {
     setDisable(!regex.test(text));
   };
 
-  const redirect = () => {
-    if (!disable) {
-      navigation.navigate('Login', {
+  const redirect = async () => {
+    const array = await AsyncStorage.getItem('users');
+    const arr = array ? JSON.parse(array) : [];
+
+    const user = arr.find(item => item.email === input);
+    console.log(user, arr);
+    if (!disable && user) {
+      navigation.navigate('SignIn', {
+        email: input,
+      });
+    } else if (!disable && !user) {
+      navigation.navigate('Register', {
         email: input,
       });
     } else {
@@ -36,8 +45,8 @@ export default function RegistrationScreen({navigation}) {
     <View style={styles.mainWrapper}>
       <Header />
       <TitleAndSubTitle
-        title="Welcome to the Pentair Home app!"
-        subTitle="Get the most out of your home's water. Enter your email to get started."
+        title={I18n.t('registrationTitle')}
+        subTitle={I18n.t('registrationSubTitle')}
         subTitleContProp={styles.subTitleCont}
       />
       <Input
@@ -51,9 +60,6 @@ export default function RegistrationScreen({navigation}) {
       />
       <Button
         testID="register"
-        btnContainerProp={{
-          backgroundColor: disable ? Colors.primary400 : Colors.primary700,
-        }}
         onPress={redirect}
         title={I18n.t('GetStarted')}
         btnWrapper={styles.btnWrapper}

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   View,
   Text,
@@ -12,6 +12,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Header from '../components/Header';
 import Button from '../components/Button';
@@ -20,23 +21,37 @@ import TitleAndSubTitle from '../components/TitleAndSubTitle';
 import {Colors} from '../constants/colors';
 import I18n from '../languages/i18n';
 
-export default function LoginScreen({navigation, route}) {
-  const [disable, setDisable] = useState(true);
+export default function SignInScreen({navigation, route}) {
   const [error, setError] = useState(false);
   const [loader, setLoader] = useState(false);
+  const [inputValue, setInputValue] = useState(false);
+  const [pass, setPass] = useState('');
   const {email} = route.params;
 
-  const regex =
-    /^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])[a-zA-Z0-9~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]{8,20}$/;
-
-  const validate = text => {
-    setDisable(!regex.test(text));
+  const users = async () => {
+    const arr = await AsyncStorage.getItem('users');
+    console.log(JSON.parse(arr));
   };
 
-  const redirect = () => {
-    if (!disable) {
+  useEffect(() => {
+    users();
+    if (email) {
+      setInputValue(true);
+    }
+  }, []);
+
+  const onChange = text => {
+    setPass(text);
+  };
+
+  const redirect = async () => {
+    const arr = await AsyncStorage.getItem('users');
+    const array = arr ? JSON.parse(arr) : [];
+    const user = array.find(item => item.email === email);
+    if (user.password === pass) {
       setLoader(true);
       navigation.navigate('Dashboard');
+      setLoader(false);
     } else {
       setError(true);
     }
@@ -50,8 +65,8 @@ export default function LoginScreen({navigation, route}) {
         style={styles.container}>
         <ScrollView>
           <TitleAndSubTitle
-            title="Looks like you already have a Pentair account!"
-            subTitle="Sign in to go to your account."
+            title={I18n.t('signInTitle')}
+            subTitle={I18n.t('signInSubTitle')}
             subTitleContProp={styles.subTitleCont}
           />
           <Input
@@ -59,24 +74,24 @@ export default function LoginScreen({navigation, route}) {
             label={I18n.t('Email')}
             placeholder={I18n.t('Email')}
             value={email}
-            inputValue={true}
+            inputValue={inputValue}
+            titleHeaderProp={inputValue && {color: Colors.grayishBlack}}
           />
           <Input
             password
             editable={true}
             label={I18n.t('Password')}
-            placeholder={I18n.t('PasswordTxt')}
-            onChangeText={validate}
+            placeholder={I18n.t('Enterpassword')}
+            onChangeText={onChange}
             error={error && <Text>{I18n.t('PasswordError')}</Text>}
             onFocus={() => setError(false)}
             passwordLoader={loader}
+            forgotPassword={true}
+            forgotPass={() => navigation.navigate('ForgotPassword')}
           />
 
           <Button
             testID="signIn"
-            btnContainerProp={{
-              backgroundColor: disable ? Colors.primary400 : Colors.primary700,
-            }}
             title={I18n.t('Signin')}
             btnWrapper={{...styles.btnCont, ...styles.btnFirst}}
             onPress={redirect}
@@ -117,11 +132,11 @@ const styles = StyleSheet.create({
     marginHorizontal: wp(5),
   },
   btnSecondCont: {
-    backgroundColor: Colors.backGround,
-    borderColor: Colors.primary700,
+    backgroundColor: Colors.white,
+    borderColor: Colors.lightBlue,
     borderWidth: wp(0.3),
   },
   btnSecondTxt: {
-    color: Colors.primary700,
+    color: Colors.lightBlue,
   },
 });

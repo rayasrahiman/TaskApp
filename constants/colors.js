@@ -8,4 +8,13 @@ export const Colors = {
   backGround: '#ffffff',
   error: 'red',
   gray700: '#221c30',
+  red: '#FF0000',
+  darkBlue: '#244379',
+  lightBlue: '#0E6E96',
+  gray: '#CCCCCC',
+  lightGray: '#EBEBEB',
+  white: '#FFFFFF',
+  grayishBlack: '#838383',
+  black: '#000000',
+  green: '#4D8405',
 };

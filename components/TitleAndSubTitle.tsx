@@ -13,8 +13,11 @@ export type Props = {
   titleContProp: any;
   titleTxtProp: any;
   subTitleContProp: any;
+  emailSubTitleContProp: any;
   subTitleTxtProp: any;
   viewPager: boolean;
+  email: boolean;
+  emailVal: string;
 };
 
 const TitleAndSubTitle: React.FC<Props> = ({
@@ -23,8 +26,11 @@ const TitleAndSubTitle: React.FC<Props> = ({
   titleContProp,
   titleTxtProp,
   subTitleContProp,
+  emailSubTitleContProp,
   subTitleTxtProp,
   viewPager,
+  email,
+  emailVal,
 }) => {
   return (
     <View>
@@ -52,22 +58,50 @@ const TitleAndSubTitle: React.FC<Props> = ({
           },
           ...subTitleContProp,
         }}>
-        <Text style={{...styles.subTitleTxt, ...subTitleTxtProp}}>
+        <Text
+          style={{
+            ...styles.subTitleTxt,
+            ...{color: Colors.grayishBlack},
+            ...subTitleTxtProp,
+          }}>
           {subTitle}
         </Text>
       </View>
+      {email && (
+        <View
+          style={{
+            ...{
+              marginHorizontal: viewPager
+                ? 0
+                : Platform.OS === 'android'
+                ? wp(5)
+                : wp(3),
+              marginBottom: hp(2),
+            },
+            ...emailSubTitleContProp,
+          }}>
+          <Text
+            style={{
+              ...styles.subTitleTxt,
+              ...{color: Colors.black},
+              ...subTitleTxtProp,
+            }}>
+            {emailVal}
+          </Text>
+        </View>
+      )}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   titleTxt: {
-    color: Colors.primary700,
+    color: Colors.darkBlue,
     fontWeight: 'bold',
     fontSize: Platform.OS === 'android' ? hp(5) : hp(4),
   },
   subTitleTxt: {
-    color: '#777',
+    color: Colors.grayishBlack,
     fontWeight: 'bold',
     fontSize: Platform.OS === 'android' ? hp(3) : hp(2),
   },

@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderBottomColor: Colors.gray700,
+    borderBottomColor: Colors.gray,
     borderBottomWidth: wp(0.3),
     width: Dimensions.get('window').width,
   },

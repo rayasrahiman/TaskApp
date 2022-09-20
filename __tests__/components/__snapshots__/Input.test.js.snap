@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render Input correctly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 22.5,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 26.5,
+          "fontWeight": "bold",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#838383",
+        "borderRadius": 13.5,
+        "borderWidth": 2.5,
+        "flexDirection": "row",
+        "height": 80,
+        "marginHorizontal": 22.5,
+        "marginVertical": 10,
+        "paddingHorizontal": 15,
+      }
+    }
+  >
+    <TextInput
+      autoCorrect={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "color": "#000000",
+          "flex": 1,
+          "fontSize": 26.5,
+        }
+      }
+    />
+  </View>
+</View>
+`;

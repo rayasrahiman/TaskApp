@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
   txt: {
     fontSize: hp(5),
     textAlign: 'center',
-    color: Colors.primary700,
+    color: Colors.darkBlue,
   },
 });

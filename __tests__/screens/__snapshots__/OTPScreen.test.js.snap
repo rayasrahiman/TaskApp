@@ -1,0 +1,854 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OTPScreen should render OTP screen correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={false}
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#CCCCCC",
+        "borderBottomWidth": 2.5,
+        "justifyContent": "center",
+        "width": 750,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../assets/Logo.png",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+          "width": 112.5,
+        }
+      }
+    />
+  </View>
+  <RCTScrollView>
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <RCTScrollView>
+          <View>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#244379",
+                      "fontSize": 53.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Check your Email
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 26.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#838383",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  We've sent you an email with a 6-digit code. Please check your email and enter the code below.
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "marginVertical": 40,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontSize": 40,
+                    }
+                  }
+                >
+                  6-digit code
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 5,
+                        "borderWidth": 1,
+                        "height": 120,
+                        "marginBottom": 66.5,
+                        "marginHorizontal": 26.5,
+                        "width": 67.5,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <TextInput
+                    accessibilityLabel="otpInput-0"
+                    accessible={true}
+                    autoCapitalize="none"
+                    clearTextOnFocus={false}
+                    firstInput={true}
+                    keyboardType="phone-pad"
+                    maxLength={6}
+                    numberOfInputs={6}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder=""
+                    secureTextEntry={false}
+                    selectTextOnFocus={true}
+                    style={
+                      Object {
+                        "fontSize": 40,
+                        "textAlign": "center",
+                      }
+                    }
+                    testID="otpInput-0"
+                    textContentType="none"
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 5,
+                        "borderWidth": 1,
+                        "height": 120,
+                        "marginBottom": 66.5,
+                        "marginHorizontal": 26.5,
+                        "width": 67.5,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <TextInput
+                    accessibilityLabel="otpInput-1"
+                    accessible={true}
+                    autoCapitalize="none"
+                    autoFocus={false}
+                    clearTextOnFocus={false}
+                    firstInput={false}
+                    keyboardType="phone-pad"
+                    maxLength={1}
+                    numberOfInputs={6}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder=""
+                    secureTextEntry={false}
+                    selectTextOnFocus={true}
+                    style={
+                      Object {
+                        "fontSize": 40,
+                        "textAlign": "center",
+                      }
+                    }
+                    testID="otpInput-1"
+                    textContentType="none"
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 5,
+                        "borderWidth": 1,
+                        "height": 120,
+                        "marginBottom": 66.5,
+                        "marginHorizontal": 26.5,
+                        "width": 67.5,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <TextInput
+                    accessibilityLabel="otpInput-2"
+                    accessible={true}
+                    autoCapitalize="none"
+                    autoFocus={false}
+                    clearTextOnFocus={false}
+                    firstInput={false}
+                    keyboardType="phone-pad"
+                    maxLength={1}
+                    numberOfInputs={6}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder=""
+                    secureTextEntry={false}
+                    selectTextOnFocus={true}
+                    style={
+                      Object {
+                        "fontSize": 40,
+                        "textAlign": "center",
+                      }
+                    }
+                    testID="otpInput-2"
+                    textContentType="none"
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 5,
+                        "borderWidth": 1,
+                        "height": 120,
+                        "marginBottom": 66.5,
+                        "marginHorizontal": 26.5,
+                        "width": 67.5,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <TextInput
+                    accessibilityLabel="otpInput-3"
+                    accessible={true}
+                    autoCapitalize="none"
+                    autoFocus={false}
+                    clearTextOnFocus={false}
+                    firstInput={false}
+                    keyboardType="phone-pad"
+                    maxLength={1}
+                    numberOfInputs={6}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder=""
+                    secureTextEntry={false}
+                    selectTextOnFocus={true}
+                    style={
+                      Object {
+                        "fontSize": 40,
+                        "textAlign": "center",
+                      }
+                    }
+                    testID="otpInput-3"
+                    textContentType="none"
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 5,
+                        "borderWidth": 1,
+                        "height": 120,
+                        "marginBottom": 66.5,
+                        "marginHorizontal": 26.5,
+                        "width": 67.5,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <TextInput
+                    accessibilityLabel="otpInput-4"
+                    accessible={true}
+                    autoCapitalize="none"
+                    autoFocus={false}
+                    clearTextOnFocus={false}
+                    firstInput={false}
+                    keyboardType="phone-pad"
+                    maxLength={1}
+                    numberOfInputs={6}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder=""
+                    secureTextEntry={false}
+                    selectTextOnFocus={true}
+                    style={
+                      Object {
+                        "fontSize": 40,
+                        "textAlign": "center",
+                      }
+                    }
+                    testID="otpInput-4"
+                    textContentType="none"
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 5,
+                        "borderWidth": 1,
+                        "height": 120,
+                        "marginBottom": 66.5,
+                        "marginHorizontal": 26.5,
+                        "width": 67.5,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <TextInput
+                    accessibilityLabel="otpInput-5"
+                    accessible={true}
+                    autoCapitalize="none"
+                    autoFocus={false}
+                    clearTextOnFocus={false}
+                    firstInput={false}
+                    keyboardType="phone-pad"
+                    maxLength={1}
+                    numberOfInputs={6}
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder=""
+                    secureTextEntry={false}
+                    selectTextOnFocus={true}
+                    style={
+                      Object {
+                        "fontSize": 40,
+                        "textAlign": "center",
+                      }
+                    }
+                    testID="otpInput-5"
+                    textContentType="none"
+                    underlineColorAndroid="transparent"
+                  />
+                </View>
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  New Password
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#838383",
+                    "borderRadius": 13.5,
+                    "borderWidth": 2.5,
+                    "flexDirection": "row",
+                    "height": 80,
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 10,
+                    "paddingHorizontal": 15,
+                  }
+                }
+              >
+                <TextInput
+                  autoCorrect={false}
+                  editable={true}
+                  onBlur={[Function]}
+                  onChangeText={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Enter password"
+                  secureTextEntry={true}
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "flex": 1,
+                      "fontSize": 26.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    onPress={[Function]}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "fontSize": 40,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰛑
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 40,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    Atleast 8 characters.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    1 uppercase and 1 lowercase letter.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    1 number.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "color": "#CCCCCC",
+                          "fontSize": 40,
+                          "marginRight": 7.5,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰄬
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#838383",
+                        "fontSize": 40,
+                      }
+                    }
+                  >
+                    1 special character.
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginHorizontal": 22.5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontSize": 26.5,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Confirm New Password
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#838383",
+                    "borderRadius": 13.5,
+                    "borderWidth": 2.5,
+                    "flexDirection": "row",
+                    "height": 80,
+                    "marginHorizontal": 22.5,
+                    "marginVertical": 10,
+                    "paddingHorizontal": 15,
+                  }
+                }
+              >
+                <TextInput
+                  autoCorrect={false}
+                  editable={true}
+                  onBlur={[Function]}
+                  onChangeText={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Enter password"
+                  secureTextEntry={true}
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "flex": 1,
+                      "fontSize": 26.5,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={false}
+                    onPress={[Function]}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "fontSize": 40,
+                        },
+                        Object {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    󰛑
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-end",
+                  "flex": 1,
+                  "justifyContent": "flex-end",
+                  "marginHorizontal": 37.5,
+                  "marginTop": 167,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#0E6E96",
+                    "borderRadius": 10,
+                    "height": 93.5,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "width": "100%",
+                  }
+                }
+                testID="submit"
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 40,
+                      "paddingVertical": 6.5,
+                    }
+                  }
+                >
+                  Submit
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-end",
+                  "flex": 1,
+                  "justifyContent": "flex-end",
+                  "marginHorizontal": 37.5,
+                  "marginVertical": 40,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#0E6E96",
+                    "borderRadius": 10,
+                    "borderWidth": 2.5,
+                    "height": 93.5,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#0E6E96",
+                      "fontSize": 40,
+                      "paddingVertical": 6.5,
+                    }
+                  }
+                >
+                  Re-Send Code
+                </Text>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
