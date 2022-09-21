@@ -7,17 +7,21 @@ import {
 
 import {TermsPolicy} from '../assets/TermsPolicy';
 import {Colors} from '../constants/colors';
+import Header from '../components/Header';
 import TitleAndSubTitle from '../components/TitleAndSubTitle';
 
 export default function TermsAndPolicy({route}) {
   const renderItem = ({item}) => {
     return (
       item.id === route.params.termsPrivacyId && (
-        <TitleAndSubTitle
-          title={item.title}
-          subTitle={item.description}
-          // subTitleContProp={styles.subTitleCont}
-        />
+        <View>
+          <Header />
+          <TitleAndSubTitle
+            title={item.title}
+            subTitle={item.description}
+            // subTitleContProp={styles.subTitleCont}
+          />
+        </View>
       )
     );
   };

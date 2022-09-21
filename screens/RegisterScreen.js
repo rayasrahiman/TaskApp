@@ -52,7 +52,7 @@ export default function RegisterScreen({navigation, route}) {
     const array = await AsyncStorage.getItem('users');
     const arr = array ? JSON.parse(array) : [];
     console.log(array, 'Register');
-    if (!disable && confirmInput === newInput && terms && updates) {
+    if (confirmInput === newInput && terms && updates) {
       const user = {email: route.params.email, password: newInput};
       arr.push(user);
       setConfirmNew(true);
