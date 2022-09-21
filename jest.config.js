@@ -6,4 +6,6 @@ module.exports = {
     'node_modules/(?!(jest-)?@react-native|react-native|@react-native-community|@react-navigation|@twotalltotems/react-native-otp-input)',
   ],
   testRegex: '(/__tests__/.*|(\\.|/)(test))\\.js$',
+  collectCoverage: true,
+  coverageReporters: ["json", "html"],
 };

@@ -9,6 +9,9 @@ import Header from '../../components/Header';
 import TitleAndSubTitle from '../../components/TitleAndSubTitle';
 import I18n from '../../languages/i18n';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 describe('RegisterScreen', () => {
   const mockedParams = {
     route: {params: {email: 'test@test.com'}},

@@ -4,7 +4,8 @@ import {render} from '@testing-library/react-native';
 
 import App from '../App';
 
-// jest.mock('../languages/i18n');
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
 
 describe('App', () => {
   test('should render correctly', () => {

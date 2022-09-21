@@ -7,6 +7,9 @@ import ViewPager from '../../components/ViewPager';
 import TitleAndSubTitle from '../../components/TitleAndSubTitle';
 import Button from '../../components/Button';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 describe('WelcomeScreen', () => {
   test('should render Welcome screen correctly', () => {
     const wrapper = render(<WelcomeScreen />).toJSON();

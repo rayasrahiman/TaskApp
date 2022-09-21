@@ -5,6 +5,9 @@ import {shallow} from 'enzyme';
 import Input from '../../components/Input';
 import Loader from '../../components/Loader';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 describe('Input', () => {
   test('should render Input correctly', () => {
     const wrapper = render(<Input />).toJSON();

@@ -9,13 +9,6 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
     }
   }
 >
-  <Modal
-    animationType="slide"
-    hardwareAccelerated={false}
-    onRequestClose={[Function]}
-    transparent={true}
-    visible={false}
-  />
   <View
     style={
       Object {
@@ -44,6 +37,13 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
   </View>
   <RCTScrollView>
     <View>
+      <Modal
+        animationType="slide"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        transparent={true}
+        visible={false}
+      />
       <View
         onLayout={[Function]}
       >
@@ -130,10 +130,12 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
                   style={
                     Array [
                       Object {
+                        "alignItems": "center",
                         "borderColor": "#CCCCCC",
                         "borderRadius": 5,
-                        "borderWidth": 1,
+                        "borderWidth": 4,
                         "height": 120,
+                        "justifyContent": "center",
                         "marginBottom": 66.5,
                         "marginHorizontal": 26.5,
                         "width": 67.5,
@@ -173,10 +175,12 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
                   style={
                     Array [
                       Object {
+                        "alignItems": "center",
                         "borderColor": "#CCCCCC",
                         "borderRadius": 5,
-                        "borderWidth": 1,
+                        "borderWidth": 4,
                         "height": 120,
+                        "justifyContent": "center",
                         "marginBottom": 66.5,
                         "marginHorizontal": 26.5,
                         "width": 67.5,
@@ -217,10 +221,12 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
                   style={
                     Array [
                       Object {
+                        "alignItems": "center",
                         "borderColor": "#CCCCCC",
                         "borderRadius": 5,
-                        "borderWidth": 1,
+                        "borderWidth": 4,
                         "height": 120,
+                        "justifyContent": "center",
                         "marginBottom": 66.5,
                         "marginHorizontal": 26.5,
                         "width": 67.5,
@@ -261,10 +267,12 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
                   style={
                     Array [
                       Object {
+                        "alignItems": "center",
                         "borderColor": "#CCCCCC",
                         "borderRadius": 5,
-                        "borderWidth": 1,
+                        "borderWidth": 4,
                         "height": 120,
+                        "justifyContent": "center",
                         "marginBottom": 66.5,
                         "marginHorizontal": 26.5,
                         "width": 67.5,
@@ -305,10 +313,12 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
                   style={
                     Array [
                       Object {
+                        "alignItems": "center",
                         "borderColor": "#CCCCCC",
                         "borderRadius": 5,
-                        "borderWidth": 1,
+                        "borderWidth": 4,
                         "height": 120,
+                        "justifyContent": "center",
                         "marginBottom": 66.5,
                         "marginHorizontal": 26.5,
                         "width": 67.5,
@@ -349,10 +359,12 @@ exports[`OTPScreen should render OTP screen correctly 1`] = `
                   style={
                     Array [
                       Object {
+                        "alignItems": "center",
                         "borderColor": "#CCCCCC",
                         "borderRadius": 5,
-                        "borderWidth": 1,
+                        "borderWidth": 4,
                         "height": 120,
+                        "justifyContent": "center",
                         "marginBottom": 66.5,
                         "marginHorizontal": 26.5,
                         "width": 67.5,

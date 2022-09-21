@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1663672404656" clover="3.2.0">
-  <project timestamp="1663672404657" name="All files">
+<coverage generated="1663740683802" clover="3.2.0">
+  <project timestamp="1663740683803" name="All files">
     <metrics statements="213" coveredstatements="150" conditionals="191" coveredconditionals="115" methods="72" coveredmethods="34" elements="476" coveredelements="299" complexity="0" loc="213" ncloc="213" packages="7" files="29" classes="29"/>
     <package name="TaskApp">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -84,10 +84,10 @@
         <metrics statements="6" coveredstatements="3" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="1"/>
         <line num="13" count="7" type="stmt"/>
         <line num="14" count="7" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="44" count="5" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
       </file>
       <file name="TermsPolicyComp.js" path="C:\React Native\TaskApp\components\TermsPolicyComp.js">
         <metrics statements="2" coveredstatements="2" conditionals="12" coveredconditionals="8" methods="1" coveredmethods="1"/>
@@ -212,7 +212,7 @@
         <line num="78" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
         <line num="83" count="8" type="stmt"/>
-        <line num="87" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
         <line num="108" count="0" type="stmt"/>
         <line num="119" count="0" type="stmt"/>
         <line num="134" count="0" type="stmt"/>

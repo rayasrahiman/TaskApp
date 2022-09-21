@@ -4,6 +4,9 @@ import {shallow} from 'enzyme';
 
 import Loader from '../../components/Loader';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 describe('Loader', () => {
   test('should render Loader correctly', () => {
     const wrapper = render(<Loader />).toJSON();

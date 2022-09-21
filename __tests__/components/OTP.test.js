@@ -4,6 +4,9 @@ import {shallow} from 'enzyme';
 
 import OTP from '../../components/OTP';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 describe('OTP', () => {
   test('should render OTP correctly', () => {
     const wrapper = render(<OTP />).toJSON();

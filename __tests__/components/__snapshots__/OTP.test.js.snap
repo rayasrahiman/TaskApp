@@ -41,10 +41,12 @@ exports[`OTP should render OTP correctly 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
             "borderColor": "#CCCCCC",
             "borderRadius": 5,
-            "borderWidth": 1,
+            "borderWidth": 4,
             "height": 120,
+            "justifyContent": "center",
             "marginBottom": 66.5,
             "marginHorizontal": 26.5,
             "width": 67.5,
@@ -84,10 +86,12 @@ exports[`OTP should render OTP correctly 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
             "borderColor": "#CCCCCC",
             "borderRadius": 5,
-            "borderWidth": 1,
+            "borderWidth": 4,
             "height": 120,
+            "justifyContent": "center",
             "marginBottom": 66.5,
             "marginHorizontal": 26.5,
             "width": 67.5,
@@ -128,10 +132,12 @@ exports[`OTP should render OTP correctly 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
             "borderColor": "#CCCCCC",
             "borderRadius": 5,
-            "borderWidth": 1,
+            "borderWidth": 4,
             "height": 120,
+            "justifyContent": "center",
             "marginBottom": 66.5,
             "marginHorizontal": 26.5,
             "width": 67.5,
@@ -172,10 +178,12 @@ exports[`OTP should render OTP correctly 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
             "borderColor": "#CCCCCC",
             "borderRadius": 5,
-            "borderWidth": 1,
+            "borderWidth": 4,
             "height": 120,
+            "justifyContent": "center",
             "marginBottom": 66.5,
             "marginHorizontal": 26.5,
             "width": 67.5,
@@ -216,10 +224,12 @@ exports[`OTP should render OTP correctly 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
             "borderColor": "#CCCCCC",
             "borderRadius": 5,
-            "borderWidth": 1,
+            "borderWidth": 4,
             "height": 120,
+            "justifyContent": "center",
             "marginBottom": 66.5,
             "marginHorizontal": 26.5,
             "width": 67.5,
@@ -260,10 +270,12 @@ exports[`OTP should render OTP correctly 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
             "borderColor": "#CCCCCC",
             "borderRadius": 5,
-            "borderWidth": 1,
+            "borderWidth": 4,
             "height": 120,
+            "justifyContent": "center",
             "marginBottom": 66.5,
             "marginHorizontal": 26.5,
             "width": 67.5,

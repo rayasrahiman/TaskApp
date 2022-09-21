@@ -5,6 +5,9 @@ import {useNavigation} from '@react-navigation/native';
 
 import TermsAndPolicy from '../../screens/TermsAndPolicy';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 describe('TermsAndPolicy', () => {
   const mockedParams = {
     route: {params: {termsPrivacyId: 1}},

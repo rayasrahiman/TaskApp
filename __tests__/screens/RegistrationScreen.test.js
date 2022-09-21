@@ -8,6 +8,9 @@ import Header from '../../components/Header';
 import TitleAndSubTitle from '../../components/TitleAndSubTitle';
 import SignInScreen from '../../screens/SignInScreen';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 jest.mock('@react-navigation/native', () => {
   return {
     ...jest.requireActual('@react-navigation/native'),
