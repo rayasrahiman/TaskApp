@@ -21,7 +21,7 @@ export default function ModalComp({
   return (
     <Modal
       animationType="slide"
-      transparent={true}
+      transparent={false}
       visible={visible}
       onRequestClose={onRequestClose}>
       <View style={styles.Container}>
@@ -45,9 +45,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
+    backgroundColor: Colors.darkBlue,
   },
   modalView: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.white,
     borderRadius: 20,
     padding: 35,
     alignItems: 'center',

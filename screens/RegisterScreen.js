@@ -14,6 +14,7 @@ import {
 } from 'react-native-responsive-screen';
 import IoniconS from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useSelector, useDispatch} from 'react-redux';
 
 import Header from '../components/Header';
 import Input from '../components/Input';
@@ -22,6 +23,7 @@ import Button from '../components/Button';
 import I18n from '../languages/i18n';
 import {Colors} from '../constants/colors';
 import TermsPolicyComp from '../components/TermsPolicyComp';
+import {getUserFetch} from '../redux/actionsConstants';
 
 export default function RegisterScreen({navigation, route}) {
   const [disable, setDisable] = useState(true);
@@ -32,10 +34,13 @@ export default function RegisterScreen({navigation, route}) {
     updatesError: false,
   });
   const [confirmNew, setConfirmNew] = useState(false);
-  const [terms, setTerms] = useState(false);
+  // const [terms, setTerms] = useState(false);
   const [updates, setUpdates] = useState(false);
   const [newInput, setNewInput] = useState('');
   const [confirmInput, setConfirmInput] = useState('');
+
+  const users = useSelector(state => state.myFirstReducer.users);
+  const dispatch = useDispatch();
 
   const regex =
     /^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])[a-zA-Z0-9~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]{8,20}$/;
@@ -49,14 +54,13 @@ export default function RegisterScreen({navigation, route}) {
   };
 
   const redirect = async () => {
-    const array = await AsyncStorage.getItem('users');
-    const arr = array ? JSON.parse(array) : [];
-    console.log(array, 'Register');
-    if (confirmInput === newInput && terms && updates) {
+    const arr = users;
+    if (confirmInput === newInput && route.params.terms && updates) {
       const user = {email: route.params.email, password: newInput};
       arr.push(user);
       setConfirmNew(true);
       AsyncStorage.setItem('users', JSON.stringify(arr));
+      dispatch(getUserFetch());
       navigation.navigate('SignIn', {
         email: route.params.email,
       });
@@ -66,7 +70,7 @@ export default function RegisterScreen({navigation, route}) {
       setError({
         newInputError: !disable ? false : true,
         confirmInputError: confirmInput === newInput ? false : true,
-        termsError: terms ? false : true,
+        termsError: route.params.terms ? false : true,
         updatesError: updates ? false : true,
       });
     }
@@ -74,11 +78,12 @@ export default function RegisterScreen({navigation, route}) {
 
   return (
     <View style={styles.mainWrapper}>
-      <Header />
+      <Header testID="header" />
       <ScrollView>
         <KeyboardAvoidingView behavior="height" style={styles.container}>
           <ScrollView>
             <TitleAndSubTitle
+              testID="titleSubTitle"
               title={I18n.t('RegisterTitle')}
               subTitle={I18n.t('RegisterSubtitle')}
               subTitleContProp={styles.subTitleCont}
@@ -113,10 +118,13 @@ export default function RegisterScreen({navigation, route}) {
               confirmNew={confirmNew}
             />
             <TermsPolicyComp
-              terms={terms}
-              termsIconPress={() => setTerms(!terms)}
+              terms={route.params.terms}
+              // termsIconPress={() => setTerms(!terms)}
               termsOnPress={() =>
-                navigation.navigate('TermsPolicy', {termsPrivacyId: 1})
+                navigation.navigate('TermsPolicy', {
+                  termsPrivacyId: 1,
+                  email: route.params.email,
+                })
               }
               updates={updates}
               updatesIconPress={() => setUpdates(!updates)}

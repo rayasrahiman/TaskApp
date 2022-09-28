@@ -3,6 +3,7 @@ import {fireEvent, render, screen} from '@testing-library/react-native';
 import {shallow} from 'enzyme';
 import {useNavigation} from '@react-navigation/native';
 
+import {renderWithRedux} from '../../helpers/testHelpers/renderWithRedux';
 import ForgotPasswordScreen from '../../screens/ForgotPasswordScreen';
 import OTPScreen from '../../screens/OTPScreen';
 import Header from '../../components/Header';
@@ -14,28 +15,28 @@ afterEach(() => jest.clearAllMocks());
 
 describe('ForgotPasswordScreen', () => {
   test('should render ForgotPassword screen correctly', () => {
-    const wrapper = render(<ForgotPasswordScreen />).toJSON();
+    const wrapper = renderWithRedux(<ForgotPasswordScreen />).toJSON();
     expect(wrapper).toMatchSnapshot();
   });
 
   test('should render Header', () => {
-    const wrapper = shallow(<ForgotPasswordScreen />);
-    wrapper.find(<Header />);
+    const wrapper = renderWithRedux(<ForgotPasswordScreen />);
+    wrapper.getByTestId('header');
   });
 
   test('should render TitleAndSubTitle component', () => {
-    const wrapper = shallow(<ForgotPasswordScreen />);
-    wrapper.find(<TitleAndSubTitle />);
+    const wrapper = renderWithRedux(<ForgotPasswordScreen />);
+    wrapper.getByTestId('titleSubTitle');
   });
 
   test('should render TitleAndSubTitle texts', () => {
-    const wrapper = render(<ForgotPasswordScreen />);
+    const wrapper = renderWithRedux(<ForgotPasswordScreen />);
     wrapper.getByText(I18n.t('ForgotPassword'));
     wrapper.getByText(I18n.t('ForgotPassSubTitle'));
   });
 
   test('should render label', () => {
-    const wrapper = render(<ForgotPasswordScreen />);
+    const wrapper = renderWithRedux(<ForgotPasswordScreen />);
     wrapper.getByText(I18n.t('Reset'));
   });
 
@@ -43,14 +44,14 @@ describe('ForgotPasswordScreen', () => {
     const mockedParams = {
       route: {params: {email: email}},
     };
-    render(<ForgotPasswordScreen />);
+    renderWithRedux(<ForgotPasswordScreen />);
 
     const toClick = await screen.getByTestId('Reset');
 
     fireEvent(toClick, 'press');
     const email = await screen.getByTestId('emailID');
 
-    const otpScreen = render(<OTPScreen {...mockedParams} />);
+    const otpScreen = renderWithRedux(<OTPScreen {...mockedParams} />);
 
     expect(otpScreen).toBeTruthy();
   });

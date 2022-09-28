@@ -3,6 +3,7 @@ import {fireEvent, render, screen} from '@testing-library/react-native';
 import {shallow} from 'enzyme';
 import {useNavigation} from '@react-navigation/native';
 
+import {renderWithRedux} from '../../helpers/testHelpers/renderWithRedux';
 import RegistrationScreen from '../../screens/RegistrationScreen';
 import Header from '../../components/Header';
 import TitleAndSubTitle from '../../components/TitleAndSubTitle';
@@ -22,22 +23,22 @@ jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 describe('RegistrationScreen', () => {
   test('should render Registration screen correctly', () => {
-    const wrapper = render(<RegistrationScreen />).toJSON();
+    const wrapper = renderWithRedux(<RegistrationScreen />).toJSON();
     expect(wrapper).toMatchSnapshot();
   });
 
   test('should render Header', () => {
-    const wrapper = shallow(<RegistrationScreen />);
-    wrapper.find(<Header />);
+    const wrapper = renderWithRedux(<RegistrationScreen />);
+    wrapper.getByTestId('header');
   });
 
   test('should render TitleAndSubTitle component', () => {
-    const wrapper = shallow(<RegistrationScreen />);
-    wrapper.find(<TitleAndSubTitle />);
+    const wrapper = renderWithRedux(<RegistrationScreen />);
+    wrapper.getByTestId('titleSubTitle');
   });
 
   test('should render TitleAndSubTitle texts', () => {
-    const wrapper = render(<RegistrationScreen />);
+    const wrapper = renderWithRedux(<RegistrationScreen />);
     wrapper.getByText('Welcome to the Pentair Home app!');
     wrapper.getByText(
       "Get the most out of your home's water. Enter your email to get started.",
@@ -45,7 +46,7 @@ describe('RegistrationScreen', () => {
   });
 
   test('should render label', () => {
-    const wrapper = render(<RegistrationScreen />);
+    const wrapper = renderWithRedux(<RegistrationScreen />);
     wrapper.getByText('Get Started');
   });
 
@@ -59,8 +60,9 @@ describe('RegistrationScreen', () => {
     const mockNavigate = jest.fn();
     useNavigation.mockReturnValueOnce({navigate: mockNavigate});
 
-    const wrapper = shallow(<RegistrationScreen />);
-    wrapper.find('Button').simulate('click');
+    const wrapper = renderWithRedux(<RegistrationScreen />);
+    // wrapper.find('Button').simulate('click');
+    fireEvent.press(wrapper.getByTestId('register'));
 
     await (() => {
       expect(mockNavigate).toHaveBeenCalledWith('SignIn', {
@@ -73,14 +75,14 @@ describe('RegistrationScreen', () => {
     const mockedParams = {
       route: {params: {email: email}},
     };
-    render(<RegistrationScreen />);
+    renderWithRedux(<RegistrationScreen />);
 
     const toClick = await screen.getByTestId('register');
 
     fireEvent(toClick, 'press');
     const email = await screen.getByTestId('emailID');
 
-    const signInScreen = render(<SignInScreen {...mockedParams} />);
+    const signInScreen = renderWithRedux(<SignInScreen {...mockedParams} />);
 
     expect(signInScreen).toBeTruthy();
   });

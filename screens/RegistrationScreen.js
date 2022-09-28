@@ -1,18 +1,26 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useSelector, useDispatch} from 'react-redux';
 
 import Button from '../components/Button';
 import Header from '../components/Header';
 import Input from '../components/Input';
 import TitleAndSubTitle from '../components/TitleAndSubTitle';
 import I18n from '../languages/i18n';
+import {getUserFetch} from '../redux/actionsConstants';
 
 export default function RegistrationScreen({navigation}) {
   const [input, setInput] = useState('');
   const [disable, setDisable] = useState(true);
   const [error, setError] = useState(false);
+  const users = useSelector(state => state.myFirstReducer.users);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getUserFetch());
+  }, [dispatch]);
 
   const regex =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
@@ -23,11 +31,7 @@ export default function RegistrationScreen({navigation}) {
   };
 
   const redirect = async () => {
-    const array = await AsyncStorage.getItem('users');
-    const arr = array ? JSON.parse(array) : [];
-
-    const user = arr.find(item => item.email === input);
-    console.log(user, arr);
+    const user = users.find(item => item.email === input);
     if (!disable && user) {
       navigation.navigate('SignIn', {
         email: input,
@@ -43,8 +47,9 @@ export default function RegistrationScreen({navigation}) {
 
   return (
     <View style={styles.mainWrapper}>
-      <Header />
+      <Header testID="header" />
       <TitleAndSubTitle
+        testID="titleSubTitle"
         title={I18n.t('registrationTitle')}
         subTitle={I18n.t('registrationSubTitle')}
         subTitleContProp={styles.subTitleCont}

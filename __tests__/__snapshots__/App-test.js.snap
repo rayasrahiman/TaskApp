@@ -150,6 +150,7 @@ exports[`App should render correctly 1`] = `
                 scrollEventThrottle={50}
                 showsHorizontalScrollIndicator={false}
                 stickyHeaderIndices={Array []}
+                testID="viewPager"
                 viewabilityConfigCallbackPairs={Array []}
               >
                 <View>
@@ -639,6 +640,7 @@ exports[`App should render correctly 1`] = `
                     "opacity": 1,
                   }
                 }
+                testID="btnRight"
               >
                 <Text
                   style={

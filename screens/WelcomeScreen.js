@@ -7,6 +7,7 @@ import I18n from '../languages/i18n';
 const WelcomeScreen = ({navigation}) => {
   return (
     <ViewPager
+      testID="viewPager"
       data={Images}
       horizontalIndicator={false}
       pagingEnabled={true}

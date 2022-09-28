@@ -31,9 +31,10 @@ const TitleAndSubTitle: React.FC<Props> = ({
   viewPager,
   email,
   emailVal,
+  ...titleAndSubTitleProp
 }) => {
   return (
-    <View>
+    <View {...titleAndSubTitleProp}>
       <View
         style={{
           ...{

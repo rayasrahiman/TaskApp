@@ -14,46 +14,1372 @@ exports[`DashboardScreen should render Dashboard screen correctly 1`] = `
         "alignItems": "center",
         "borderBottomColor": "#CCCCCC",
         "borderBottomWidth": 2.5,
-        "justifyContent": "center",
+        "flexDirection": "row",
+        "height": 200,
+        "justifyContent": "space-between",
+        "marginTop": -66.5,
         "width": 750,
       }
     }
   >
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../assets/Logo.png",
-        }
-      }
+    <View
       style={
         Object {
-          "height": 200,
-          "width": 112.5,
+          "marginLeft": 300,
         }
       }
-    />
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../assets/Logo.png",
+          }
+        }
+        style={
+          Object {
+            "height": 200,
+            "width": 112.5,
+          }
+        }
+      />
+    </View>
   </View>
+  <RCTScrollView
+    showsVerticalScrollIndicator={false}
+    style={
+      Object {
+        "paddingBottom": 66.5,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#EBF0F4",
+            "elevation": 5,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "padding": 40,
+            "shadowColor": "#838383",
+            "shadowOffset": Object {
+              "height": 0.3,
+              "width": 0,
+            },
+            "shadowOpacity": 0.25,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginHorizontal": 4,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#244379",
+                  "fontSize": 53.5,
+                  "marginRight": 15,
+                },
+                Object {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#244379",
+                "fontSize": 40,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Partly Cloudy
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginHorizontal": 22.5,
+              }
+            }
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Object {
+                    "color": "#244379",
+                    "fontSize": 53.5,
+                    "marginRight": 15,
+                  },
+                  Object {
+                    "fontFamily": "Ionicons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#244379",
+                  "fontSize": 40,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              78°F
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginHorizontal": 22.5,
+              }
+            }
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Object {
+                    "color": "#244379",
+                    "fontSize": 53.5,
+                    "marginRight": 15,
+                  },
+                  Object {
+                    "fontFamily": "Feather",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#244379",
+                  "fontSize": 40,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              70°F
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginHorizontal": 37.5,
+            "marginVertical": 40,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 12,
+              },
+              Object {
+                "color": "#4D8405",
+                "fontSize": 53.5,
+                "marginRight": 15,
+              },
+              Object {
+                "fontFamily": "Ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#4D8405",
+              "fontSize": 40,
+            }
+          }
+        >
+          Everything's OK!
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginHorizontal": 37.5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderColor": "#CCCCCC",
+              "borderRadius": 26.5,
+              "borderWidth": 4,
+              "height": 267,
+              "marginRight": 15,
+              "width": 330,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#0E6E96",
+                  "fontSize": 53.5,
+                  "paddingHorizontal": 22.5,
+                  "paddingTop": 26.5,
+                },
+                Object {
+                  "fontFamily": "anticon",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#0E6E96",
+                "fontSize": 46.5,
+                "fontWeight": "bold",
+                "paddingHorizontal": 22.5,
+                "paddingTop": 26.5,
+              }
+            }
+          >
+            IntelliConnect
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#0E6E96",
+                "fontSize": 40,
+                "paddingHorizontal": 22.5,
+              }
+            }
+          >
+            Auto
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderColor": "#CCCCCC",
+              "borderRadius": 26.5,
+              "borderWidth": 4,
+              "height": 267,
+              "marginRight": 15,
+              "width": 330,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#0E6E96",
+                  "fontSize": 53.5,
+                  "paddingHorizontal": 22.5,
+                  "paddingTop": 26.5,
+                },
+                Object {
+                  "fontFamily": "Entypo",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#0E6E96",
+                "fontSize": 46.5,
+                "fontWeight": "bold",
+                "paddingHorizontal": 22.5,
+                "paddingTop": 26.5,
+              }
+            }
+          >
+            IntelliFlo
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#0E6E96",
+                "fontSize": 40,
+                "paddingHorizontal": 22.5,
+              }
+            }
+          >
+            ON until 10pm
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginHorizontal": 37.5,
+            "marginVertical": 40,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 46.5,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          For You
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#838383",
+              "fontSize": 40,
+            }
+          }
+        >
+          Tip and Resources to help you manage your water.
+        </Text>
+      </View>
+      <View>
+        <View>
+          <RCTScrollView
+            data={
+              Array [
+                Object {
+                  "description": "Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383",
+                  "id": 1,
+                  "testing": "Start Testing My Water",
+                  "title": "Your testing kit is here!",
+                },
+                Object {
+                  "description": "Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383",
+                  "id": 2,
+                  "testing": "Start Testing My Water",
+                  "title": "Your testing kit is here!",
+                },
+                Object {
+                  "description": "Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383",
+                  "id": 3,
+                  "testing": "Start Testing My Water",
+                  "title": "Your testing kit is here!",
+                },
+                Object {
+                  "description": "Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383",
+                  "id": 4,
+                  "testing": "Start Testing My Water",
+                  "title": "Your testing kit is here!",
+                },
+              ]
+            }
+            getItem={[Function]}
+            getItemCount={[Function]}
+            horizontal={true}
+            keyExtractor={[Function]}
+            onContentSizeChange={[Function]}
+            onLayout={[Function]}
+            onMomentumScrollBegin={[Function]}
+            onMomentumScrollEnd={[Function]}
+            onScroll={[Function]}
+            onScrollBeginDrag={[Function]}
+            onScrollEndDrag={[Function]}
+            pagingEnabled={true}
+            removeClippedSubviews={false}
+            renderItem={[Function]}
+            scrollEventThrottle={50}
+            showsHorizontalScrollIndicator={false}
+            stickyHeaderIndices={Array []}
+            viewabilityConfigCallbackPairs={Array []}
+          >
+            <View>
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "borderColor": "#CCCCCC",
+                      "borderRadius": 26.5,
+                      "borderWidth": 4,
+                      "height": 533.5,
+                      "marginHorizontal": 37.5,
+                      "width": 675,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <View>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 53.5,
+                            "fontWeight": "bold",
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 26.5,
+                          }
+                        }
+                      >
+                        Your testing kit is here!
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 40,
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 13.5,
+                          }
+                        }
+                      >
+                        Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383
+                      </Text>
+                      <View
+                        style={
+                          Object {
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#0E6E96",
+                              "fontSize": 40,
+                              "paddingLeft": 22.5,
+                              "paddingRight": 187.5,
+                            }
+                          }
+                        >
+                          Start Testing My Water
+                        </Text>
+                      </View>
+                    </View>
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -60,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 66.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰅖
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -120,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 133.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰶉
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "borderColor": "#CCCCCC",
+                      "borderRadius": 26.5,
+                      "borderWidth": 4,
+                      "height": 533.5,
+                      "marginHorizontal": 37.5,
+                      "width": 675,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <View>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 53.5,
+                            "fontWeight": "bold",
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 26.5,
+                          }
+                        }
+                      >
+                        Your testing kit is here!
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 40,
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 13.5,
+                          }
+                        }
+                      >
+                        Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383
+                      </Text>
+                      <View
+                        style={
+                          Object {
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#0E6E96",
+                              "fontSize": 40,
+                              "paddingLeft": 22.5,
+                              "paddingRight": 187.5,
+                            }
+                          }
+                        >
+                          Start Testing My Water
+                        </Text>
+                      </View>
+                    </View>
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -60,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 66.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰅖
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -120,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 133.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰶉
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "borderColor": "#CCCCCC",
+                      "borderRadius": 26.5,
+                      "borderWidth": 4,
+                      "height": 533.5,
+                      "marginHorizontal": 37.5,
+                      "width": 675,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <View>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 53.5,
+                            "fontWeight": "bold",
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 26.5,
+                          }
+                        }
+                      >
+                        Your testing kit is here!
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 40,
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 13.5,
+                          }
+                        }
+                      >
+                        Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383
+                      </Text>
+                      <View
+                        style={
+                          Object {
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#0E6E96",
+                              "fontSize": 40,
+                              "paddingLeft": 22.5,
+                              "paddingRight": 187.5,
+                            }
+                          }
+                        >
+                          Start Testing My Water
+                        </Text>
+                      </View>
+                    </View>
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -60,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 66.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰅖
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -120,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 133.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰶉
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    null,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "borderColor": "#CCCCCC",
+                      "borderRadius": 26.5,
+                      "borderWidth": 4,
+                      "height": 533.5,
+                      "marginHorizontal": 37.5,
+                      "width": 675,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <View>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 53.5,
+                            "fontWeight": "bold",
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 26.5,
+                          }
+                        }
+                      >
+                        Your testing kit is here!
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#244379",
+                            "fontSize": 40,
+                            "paddingLeft": 22.5,
+                            "paddingRight": 187.5,
+                            "paddingTop": 13.5,
+                          }
+                        }
+                      >
+                        Before you do anything, open the package and put the cold pack into your freezer. Order Number: 28192383
+                      </Text>
+                      <View
+                        style={
+                          Object {
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#0E6E96",
+                              "fontSize": 40,
+                              "paddingLeft": 22.5,
+                              "paddingRight": 187.5,
+                            }
+                          }
+                        >
+                          Start Testing My Water
+                        </Text>
+                      </View>
+                    </View>
+                    <View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -60,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 66.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰅖
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "marginLeft": -120,
+                            "marginVertical": 40,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#0E6E96",
+                                "fontSize": 133.5,
+                              },
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          󰶉
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "marginVertical": 40,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#244379",
+                  "borderColor": "#244379",
+                  "borderRadius": 16.75,
+                  "borderWidth": 5,
+                  "height": 33.5,
+                  "margin": 3,
+                  "width": 33.5,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#838383",
+                  "borderColor": "#838383",
+                  "borderRadius": 16.75,
+                  "borderWidth": 5,
+                  "height": 33.5,
+                  "margin": 3,
+                  "width": 33.5,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#838383",
+                  "borderColor": "#838383",
+                  "borderRadius": 16.75,
+                  "borderWidth": 5,
+                  "height": 33.5,
+                  "margin": 3,
+                  "width": 33.5,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#838383",
+                  "borderColor": "#838383",
+                  "borderRadius": 16.75,
+                  "borderWidth": 5,
+                  "height": 33.5,
+                  "margin": 3,
+                  "width": 33.5,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
   <View
     style={
       Object {
         "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
+        "elevation": 5,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 53.5,
+        "shadowColor": "#838383",
+        "shadowOffset": Object {
+          "height": 0.3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.25,
       }
     }
   >
-    <Text
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "color": "#244379",
-          "fontSize": 66.5,
-          "textAlign": "center",
+          "alignItems": "center",
+          "opacity": 1,
         }
       }
     >
-      Welcome to Dashboard Screen!
-    </Text>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#244379",
+              "fontSize": 53.5,
+            },
+            Object {
+              "fontFamily": "anticon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#244379",
+            "fontSize": 33.5,
+          }
+        }
+      >
+        Dashboard
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 53.5,
+            },
+            Object {
+              "fontFamily": "Ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 33.5,
+          }
+        }
+      >
+        Devices
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 53.5,
+            },
+            Object {
+              "fontFamily": "Ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 33.5,
+          }
+        }
+      >
+        Schedule
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 53.5,
+            },
+            Object {
+              "fontFamily": "Fontisto",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontSize": 33.5,
+          }
+        }
+      >
+        Notifications
+      </Text>
+    </View>
   </View>
 </View>
 `;

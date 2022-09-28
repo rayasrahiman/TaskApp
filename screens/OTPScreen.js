@@ -14,6 +14,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useSelector} from 'react-redux';
 
 import Header from '../components/Header';
 import Input from '../components/Input';
@@ -37,6 +38,8 @@ export default function OTPScreen({navigation, route}) {
   const [confirmInput, setConfirmInput] = useState('');
   const [modalVisible, setModalVisible] = useState(false);
 
+  const users = useSelector(state => state.myFirstReducer.users);
+
   const regex =
     /^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])[a-zA-Z0-9~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]{8,20}$/;
 
@@ -54,11 +57,8 @@ export default function OTPScreen({navigation, route}) {
   };
 
   const redirect = async () => {
-    const array = await AsyncStorage.getItem('users');
-    const arr = array ? JSON.parse(array) : [];
-
-    if (!disable && confirmInput === newInput && OTPCode === '123456') {
-      const user = arr.filter(item =>
+    if (confirmInput === newInput && OTPCode === '123456') {
+      const user = users.filter(item =>
         item.email === route.params.email ? (item.password = newInput) : item,
       );
       AsyncStorage.setItem('users', JSON.stringify(user));
@@ -82,7 +82,7 @@ export default function OTPScreen({navigation, route}) {
   };
   return (
     <View style={styles.mainWrapper}>
-      <Header />
+      <Header testID="header" />
       <ScrollView>
         <ModalComp
           onRequestClose={() => {
@@ -98,6 +98,7 @@ export default function OTPScreen({navigation, route}) {
         <KeyboardAvoidingView behavior="height" style={styles.container}>
           <ScrollView>
             <TitleAndSubTitle
+              testID="titleSubTitle"
               title={I18n.t('OTPTitle')}
               subTitle={I18n.t('OTPSubtitle')}
               subTitleContProp={styles.subTitleCont}

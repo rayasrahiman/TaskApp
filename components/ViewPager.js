@@ -112,7 +112,10 @@ export default function ViewPager({
               />
             ))}
           </View>
-          <TouchableOpacity onPress={navigation} style={styles.wrapDot}>
+          <TouchableOpacity
+            testID="btnRight"
+            onPress={navigation}
+            style={styles.wrapDot}>
             <Text style={styles.btnTxt}>{BottomRgtBtn}</Text>
           </TouchableOpacity>
         </View>

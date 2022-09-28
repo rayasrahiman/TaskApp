@@ -7,5 +7,5 @@ module.exports = {
   ],
   testRegex: '(/__tests__/.*|(\\.|/)(test))\\.js$',
   collectCoverage: true,
-  coverageReporters: ["json", "html"],
+  coverageReporters: ['json', 'html'],
 };

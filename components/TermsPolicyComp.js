@@ -33,7 +33,7 @@ export default function TermsPolicyComp({
             },
           }}
           name={terms ? 'ios-checkbox' : 'ios-square-outline'}
-          onPress={termsIconPress}
+          // onPress={termsIconPress}
         />
         <View>
           <Text numberOfLines={2} style={styles.termsTxt1}>

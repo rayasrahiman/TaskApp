@@ -7,6 +7,9 @@ import MainNavigator from '../../navigation/NavigationScreen';
 import WelcomeScreen from '../../screens/WelcomeScreen';
 import RegistrationScreen from '../../screens/RegistrationScreen';
 
+beforeEach(jest.spyOn(console, 'error').mockImplementation(() => undefined));
+afterEach(() => jest.clearAllMocks());
+
 jest.mock('../../screens/WelcomeScreen', () => jest.fn());
 jest.mock('../../screens/RegistrationScreen', () => jest.fn());
 

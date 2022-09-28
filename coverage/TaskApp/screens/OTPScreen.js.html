@@ -30,23 +30,23 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">51.61% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>16/31</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">16.66% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>2/12</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
                 <span class="strong">57.14% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>16/28</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">23.07% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>3/13</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">55.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>20/35</span>
+                <span class='fraction'>19/34</span>
             </div>
         
             
@@ -252,7 +252,8 @@
 <a name='L187'></a><a href='#L187'>187</a>
 <a name='L188'></a><a href='#L188'>188</a>
 <a name='L189'></a><a href='#L189'>189</a>
-<a name='L190'></a><a href='#L190'>190</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -276,19 +277,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -309,9 +313,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -341,6 +342,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -457,6 +459,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useSelector} from 'react-redux';
 &nbsp;
 import Header from '../components/Header';
 import Input from '../components/Input';
@@ -480,6 +483,8 @@ export default function OTPScreen({navigation, route}) {
   const [confirmInput, setConfirmInput] = useState('');
   const [modalVisible, setModalVisible] = useState(false);
 &nbsp;
+  const users = useSelector(state =&gt; state.myFirstReducer.users);
+&nbsp;
   const regex =
     /^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&amp;*()--+={}\[\]|\\:;"'&lt;&gt;,.?/_₹])[a-zA-Z0-9~`!@#$%^&amp;*()--+={}\[\]|\\:;"'&lt;&gt;,.?/_₹]{8,20}$/;
 &nbsp;
@@ -497,11 +502,8 @@ export default function OTPScreen({navigation, route}) {
   };
 &nbsp;
   const redirect = async () =&gt; {
-    const array = await AsyncStorage.getItem('users');
-    const arr = array ? <span class="branch-0 cbranch-no" title="branch not covered" >JSON.parse(array) </span>: [];
-&nbsp;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (!disable &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >confirmInput === newInput </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >OTPCode === '123456')</span> {
-      const user = <span class="cstat-no" title="statement not covered" >arr.filter(<span class="fstat-no" title="function not covered" >it</span>em =&gt;</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (confirmInput === newInput &amp;&amp; OTPCode === '123456') {
+      const user = <span class="cstat-no" title="statement not covered" >users.filter(<span class="fstat-no" title="function not covered" >it</span>em =&gt;</span>
 <span class="cstat-no" title="statement not covered" >        item.email === route.params.email ? (item.password = newInput) : item,</span>
       );
 <span class="cstat-no" title="statement not covered" >      AsyncStorage.setItem('users', JSON.stringify(user));</span>
@@ -525,7 +527,7 @@ export default function OTPScreen({navigation, route}) {
   };
   return (
     &lt;View style={styles.mainWrapper}&gt;
-      &lt;Header /&gt;
+      &lt;Header testID="header" /&gt;
       &lt;ScrollView&gt;
         &lt;ModalComp
           onRequestClose={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
@@ -541,6 +543,7 @@ export default function OTPScreen({navigation, route}) {
         &lt;KeyboardAvoidingView behavior="height" style={styles.container}&gt;
           &lt;ScrollView&gt;
             &lt;TitleAndSubTitle
+              testID="titleSubTitle"
               title={I18n.t('OTPTitle')}
               subTitle={I18n.t('OTPSubtitle')}
               subTitleContProp={styles.subTitleCont}
@@ -637,7 +640,7 @@ const styles = StyleSheet.create({
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-09-21T06:32:56.770Z
+                at 2022-09-28T13:29:23.125Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

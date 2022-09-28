@@ -64,6 +64,7 @@ exports[`WelcomeScreen should render Welcome screen correctly 1`] = `
       scrollEventThrottle={50}
       showsHorizontalScrollIndicator={false}
       stickyHeaderIndices={Array []}
+      testID="viewPager"
       viewabilityConfigCallbackPairs={Array []}
     >
       <View>
@@ -553,6 +554,7 @@ exports[`WelcomeScreen should render Welcome screen correctly 1`] = `
           "opacity": 1,
         }
       }
+      testID="btnRight"
     >
       <Text
         style={

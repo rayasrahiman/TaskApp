@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useSelector} from 'react-redux';
 
 import Header from '../components/Header';
 import Input from '../components/Input';
@@ -14,6 +14,7 @@ export default function ForgotPasswordScreen({navigation}) {
   const [input, setInput] = useState('');
   const [disable, setDisable] = useState(true);
   const [error, setError] = useState(false);
+  const users = useSelector(state => state.myFirstReducer.users);
 
   const regex =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
@@ -24,9 +25,7 @@ export default function ForgotPasswordScreen({navigation}) {
   };
 
   const redirect = async () => {
-    const array = await AsyncStorage.getItem('users');
-    const arr = array ? JSON.parse(array) : [];
-    const user = arr.find(item => item.email === input);
+    const user = users.find(item => item.email === input);
     if (!disable && user) {
       navigation.navigate('OTP', {
         email: input,
@@ -38,8 +37,8 @@ export default function ForgotPasswordScreen({navigation}) {
 
   return (
     <View style={styles.mainWrapper}>
-      <Header />
-      <TitleAndSubTitle
+      <Header testID='header' />
+      <TitleAndSubTitle testID="titleSubTitle"
         title={I18n.t('ForgotPassword')}
         subTitle={I18n.t('ForgotPassSubTitle')}
         subTitleContProp={styles.subTitleCont}

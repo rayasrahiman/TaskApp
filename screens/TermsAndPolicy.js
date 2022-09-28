@@ -10,12 +10,25 @@ import {Colors} from '../constants/colors';
 import Header from '../components/Header';
 import TitleAndSubTitle from '../components/TitleAndSubTitle';
 
-export default function TermsAndPolicy({route}) {
+export default function TermsAndPolicy({route, navigation}) {
   const renderItem = ({item}) => {
     return (
       item.id === route.params.termsPrivacyId && (
         <View>
-          <Header />
+          {route.params.termsPrivacyId === 1 ? (
+            <Header
+              headerRight={true}
+              title="Accept"
+              onPress={() =>
+                navigation.navigate('Register', {
+                  terms: true,
+                  email: route.params.email,
+                })
+              }
+            />
+          ) : (
+            <Header />
+          )}
           <TitleAndSubTitle
             title={item.title}
             subTitle={item.description}

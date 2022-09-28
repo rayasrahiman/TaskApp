@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherTab should render WeatherTab correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#EBF0F4",
+      "elevation": 5,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "padding": 40,
+      "shadowColor": "#838383",
+      "shadowOffset": Object {
+        "height": 0.3,
+        "width": 0,
+      },
+      "shadowOpacity": 0.25,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginHorizontal": 4,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Object {
+            "color": "#244379",
+            "fontSize": 53.5,
+            "marginRight": 15,
+          },
+          Object {
+            "fontFamily": "FontAwesome5Free-Solid",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {
+            "fontWeight": "900",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#244379",
+          "fontSize": 40,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Partly Cloudy
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginHorizontal": 22.5,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#244379",
+              "fontSize": 53.5,
+              "marginRight": 15,
+            },
+            Object {
+              "fontFamily": "Ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#244379",
+            "fontSize": 40,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        78°F
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginHorizontal": 22.5,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#244379",
+              "fontSize": 53.5,
+              "marginRight": 15,
+            },
+            Object {
+              "fontFamily": "Feather",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#244379",
+            "fontSize": 40,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        70°F
+      </Text>
+    </View>
+  </View>
+</View>
+`;

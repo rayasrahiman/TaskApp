@@ -12,7 +12,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useSelector} from 'react-redux';
 
 import Header from '../components/Header';
 import Button from '../components/Button';
@@ -28,13 +28,10 @@ export default function SignInScreen({navigation, route}) {
   const [pass, setPass] = useState('');
   const {email} = route.params;
 
-  const users = async () => {
-    const arr = await AsyncStorage.getItem('users');
-    console.log(JSON.parse(arr));
-  };
+  const users = useSelector(state => state.myFirstReducer.users);
 
   useEffect(() => {
-    users();
+    console.log(email);
     if (email) {
       setInputValue(true);
     }
@@ -45,9 +42,7 @@ export default function SignInScreen({navigation, route}) {
   };
 
   const redirect = async () => {
-    const arr = await AsyncStorage.getItem('users');
-    const array = arr ? JSON.parse(arr) : [];
-    const user = array.find(item => item.email === email);
+    const user = users.find(item => item.email === email);
     if (user.password === pass) {
       setLoader(true);
       navigation.navigate('Dashboard');
@@ -59,12 +54,13 @@ export default function SignInScreen({navigation, route}) {
 
   return (
     <View style={styles.container}>
-      <Header />
+      <Header testID="header" />
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         style={styles.container}>
         <ScrollView>
           <TitleAndSubTitle
+            testID="titleSubTitle"
             title={I18n.t('signInTitle')}
             subTitle={I18n.t('signInSubTitle')}
             subTitleContProp={styles.subTitleCont}

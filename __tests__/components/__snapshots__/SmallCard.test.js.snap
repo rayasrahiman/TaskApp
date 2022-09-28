@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SmallCard should render SmallCard correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "marginHorizontal": 37.5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderColor": "#CCCCCC",
+        "borderRadius": 26.5,
+        "borderWidth": 4,
+        "height": 267,
+        "marginRight": 15,
+        "width": 330,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Object {
+            "color": "#0E6E96",
+            "fontSize": 53.5,
+            "paddingHorizontal": 22.5,
+            "paddingTop": 26.5,
+          },
+          Object {
+            "fontFamily": "anticon",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#0E6E96",
+          "fontSize": 46.5,
+          "fontWeight": "bold",
+          "paddingHorizontal": 22.5,
+          "paddingTop": 26.5,
+        }
+      }
+    >
+      IntelliConnect
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#0E6E96",
+          "fontSize": 40,
+          "paddingHorizontal": 22.5,
+        }
+      }
+    >
+      Auto
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#CCCCCC",
+        "borderRadius": 26.5,
+        "borderWidth": 4,
+        "height": 267,
+        "marginRight": 15,
+        "width": 330,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Object {
+            "color": "#0E6E96",
+            "fontSize": 53.5,
+            "paddingHorizontal": 22.5,
+            "paddingTop": 26.5,
+          },
+          Object {
+            "fontFamily": "Entypo",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#0E6E96",
+          "fontSize": 46.5,
+          "fontWeight": "bold",
+          "paddingHorizontal": 22.5,
+          "paddingTop": 26.5,
+        }
+      }
+    >
+      IntelliFlo
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#0E6E96",
+          "fontSize": 40,
+          "paddingHorizontal": 22.5,
+        }
+      }
+    >
+      ON until 10pm
+    </Text>
+  </View>
+</View>
+`;

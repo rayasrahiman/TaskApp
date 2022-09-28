@@ -11,6 +11,8 @@ export const Colors = {
   red: '#FF0000',
   darkBlue: '#244379',
   lightBlue: '#0E6E96',
+  lightestBlue: '#EBF0F4',
+  fluorescentBlue: '#DBFDFF',
   gray: '#CCCCCC',
   lightGray: '#EBEBEB',
   white: '#FFFFFF',

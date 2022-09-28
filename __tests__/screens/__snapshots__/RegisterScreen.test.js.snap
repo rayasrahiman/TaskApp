@@ -15,25 +15,36 @@ exports[`RegisterScreen should render Register screen correctly 1`] = `
         "alignItems": "center",
         "borderBottomColor": "#CCCCCC",
         "borderBottomWidth": 2.5,
-        "justifyContent": "center",
+        "flexDirection": "row",
+        "height": 200,
+        "justifyContent": "space-between",
         "width": 750,
       }
     }
+    testID="header"
   >
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../assets/Logo.png",
-        }
-      }
+    <View
       style={
         Object {
-          "height": 200,
-          "width": 112.5,
+          "marginLeft": 300,
         }
       }
-    />
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../assets/Logo.png",
+          }
+        }
+        style={
+          Object {
+            "height": 200,
+            "width": 112.5,
+          }
+        }
+      />
+    </View>
   </View>
   <RCTScrollView>
     <View>
@@ -42,7 +53,9 @@ exports[`RegisterScreen should render Register screen correctly 1`] = `
       >
         <RCTScrollView>
           <View>
-            <View>
+            <View
+              testID="titleSubTitle"
+            >
               <View
                 style={
                   Object {
@@ -479,7 +492,6 @@ exports[`RegisterScreen should render Register screen correctly 1`] = `
               >
                 <Text
                   allowFontScaling={false}
-                  onPress={[Function]}
                   selectable={false}
                   style={
                     Array [

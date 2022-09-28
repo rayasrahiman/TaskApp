@@ -1,6 +1,5 @@
 import React from 'react';
-import {fireEvent, render, screen} from '@testing-library/react-native';
-import {shallow} from 'enzyme';
+import {render} from '@testing-library/react-native';
 
 import OTP from '../../components/OTP';
 
